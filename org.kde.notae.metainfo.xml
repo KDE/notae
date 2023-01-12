@@ -23,10 +23,6 @@
   <url type="donation">https://kde.org/community/donations/?app=org.kde.notae</url>
   <developer_name>KDE Community, Felipe Kinoshita</developer_name>
 
-  <categories>
-    <category>Utilities</category>
-  </categories>
-
   <recommends>
     <control>keyboard</control>
   </recommends>
