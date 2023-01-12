@@ -11,6 +11,7 @@ add_executable(${CMAKE_PROJECT_NAME}
 target_link_libraries(${CMAKE_PROJECT_NAME}
     Qt::Core
     Qt::Gui
+    Qt::Widgets
     Qt::Qml
     Qt::Quick
     Qt::QuickControls2
