@@ -22,6 +22,10 @@ RowLayout {
             shortcut: StandardKey.Open
             onTriggered: fileDialog.open()
         }
+
+        QQC2.ToolTip.visible: hovered
+        QQC2.ToolTip.text: i18n("Open an existing note (Ctrl+O)")
+        QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
     }
 
     QQC2.ToolSeparator {
