@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<component type="desktop-application">
-  <!--
+<!--
   SPDX-FileCopyrightText: 2023 Felipe Kinoshita <kinofhek@gmail.com>
   SPDX-License-Identifier: CC0-1.0
   -->
+<component type="desktop">
   <id>org.kde.notae</id>
   <name>Notae</name>
-  <summary>Note Taking Application</summary>
+  <summary>Take notes easily</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
-  <developer_name>KDE Community, Felipe Kinoshita</developer_name>
-  <description>
-    <p>.</p>
-  </description>
-  <requires>
-    <display_length compare="ge">360</display_length>
-  </requires>
-  <recommends>
-    <control>keyboard</control>
-    <control>pointing</control>
-    <control>touch</control>
-  </recommends>
+
   <provides>
     <binary>notae</binary>
   </provides>
-  <launchable type="desktop-id">org.kde.notae.desktop</launchable>
+
+  <description>
+    <p>Notae automatically saves your work and remembers the last opened document, so you can get right back from where you left.</p>
+  </description>
+
   <url type="homepage">https://invent.kde.org/fhek/notae</url>
   <url type="bugtracker">https://invent.kde.org/fhek/notae/-/issues</url>
   <url type="donation">https://kde.org/community/donations/?app=org.kde.notae</url>
+  <developer_name>KDE Community, Felipe Kinoshita</developer_name>
+
+  <categories>
+    <category>Utilities</category>
+  </categories>
+
+  <recommends>
+    <control>keyboard</control>
+  </recommends>
+
+  <launchable type="desktop-id">org.kde.notae.desktop</launchable>
 </component>
