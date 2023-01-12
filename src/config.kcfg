@@ -8,9 +8,9 @@ SPDX-FileCopyrightText: 2023 Felipe Kinoshita <kinofhek@gmail.com>
 SPDX-License-Identifier: LGPL-2.0-or-later
 -->
     <group name="General">
-        <entry name="configuration" type="Bool">
-            <label>.</label>
-            <default>true</default>
+        <entry name="mostRecentFile" type="String">
+            <label>Most recent file.</label>
+            <default></default>
         </entry>
     </group>
 </kcfg>

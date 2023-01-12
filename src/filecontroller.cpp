@@ -6,6 +6,8 @@
 
 #include "filecontroller.h"
 
+#include "config.h"
+
 FileController::FileController(QObject *parent)
     : QObject(parent)
 {
@@ -23,6 +25,9 @@ void FileController::open(QUrl filename)
     if (!filename.isEmpty()) {
         if (file.open(QFile::ReadOnly | QFile::Text)) {
             m_filename = filename.path();
+            Config::self()->setMostRecentFile(m_filename);
+            Config::self()->save();
+
             QTextStream in(&file);
             QString text = in.readAll();
             file.close();
