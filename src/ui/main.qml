@@ -14,8 +14,6 @@ import org.kde.notae 1.0
 Kirigami.ApplicationWindow {
     id: root
 
-    property string documentText: ""
-
     title: i18n("Notae")
 
     width: Kirigami.Units.gridUnit * 50
@@ -39,7 +37,7 @@ Kirigami.ApplicationWindow {
         fileMode: FileDialog.SaveFile
         defaultSuffix: "md"
         onAccepted: {
-            FileController.saveAs(saveFileDialog.file, documentText)
+            FileController.saveAs(saveFileDialog.file)
             pageStack.replace(textPage)
         }
     }
@@ -53,8 +51,7 @@ Kirigami.ApplicationWindow {
     Connections {
         target: FileController
 
-        function onFileChanged(text, title) {
-            documentText = text
+        function onFileChanged(title) {
             root.title = title
         }
     }
@@ -101,12 +98,13 @@ Kirigami.ApplicationWindow {
                         color: Kirigami.Theme.backgroundColor
                     }
 
-                    text: documentText
+                    text: FileController.documentText
                     wrapMode: Text.Wrap
                     font.pointSize: 11
 
                     onTextChanged: {
-                        FileController.save(textarea.text)
+                        FileController.documentText = text
+                        FileController.save()
                     }
 
                     SyntaxHighlighter {

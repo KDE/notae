@@ -18,6 +18,18 @@ bool FileController::isEmptyFile()
     return m_isEmptyFile;
 }
 
+QString FileController::documentText()
+{
+    return m_documentText;
+}
+
+void FileController::setDocumentText(const QString &text) {
+    if (text != m_documentText) {
+        m_documentText = text;
+        Q_EMIT documentTextChanged();
+    }
+}
+
 void FileController::open(QUrl filename)
 {
     QFile file(filename.path());
@@ -25,39 +37,43 @@ void FileController::open(QUrl filename)
     if (!filename.isEmpty()) {
         if (file.open(QFile::ReadOnly | QFile::Text)) {
             m_filename = filename.path();
-            Config::self()->setMostRecentFile(m_filename);
-            Config::self()->save();
+            Q_EMIT fileChanged(filename.fileName());
 
             QTextStream in(&file);
             QString text = in.readAll();
             file.close();
 
+            Config::self()->setMostRecentFile(m_filename);
+            Config::self()->save();
+
             m_isEmptyFile = false;
             Q_EMIT isEmptyFileChanged();
 
-            Q_EMIT fileChanged(text, filename.fileName());
+            m_documentText = text;
+            Q_EMIT documentTextChanged();
         }
     }
 }
 
-void FileController::save(QString text)
+void FileController::save()
 {
     QFile file(m_filename);
 
     if (file.open(QFile::WriteOnly | QFile::Text)) {
         QTextStream out(&file);
-        out << text;
+        out << m_documentText;
         file.flush();
         file.close();
     }
 }
 
-void FileController::saveAs(QUrl filename, QString text)
+void FileController::saveAs(QUrl filename)
 {
     QFile file(filename.path());
 
     if (!filename.isEmpty()) {
         m_filename = filename.path();
-        save(text);
+        Q_EMIT fileChanged(filename.fileName());
+        save();
     }
 }
