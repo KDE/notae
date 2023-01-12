@@ -4,14 +4,15 @@
 #include <QApplication>
 #include <QIcon>
 #include <QQmlApplicationEngine>
-#include <QUrl>
-#include <QtQml>
+#include <QQuickStyle>
 #include <QQuickWindow>
+#include <QtQml>
+#include <QUrl>
 
 #include <KAboutData>
+#include <KDBusService>
 #include <KLocalizedContext>
 #include <KLocalizedString>
-#include <KDBusService>
 
 constexpr auto APPLICATION_ID = "org.kde.notae";
 
@@ -25,7 +26,12 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 {
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QApplication app(argc, argv);
+    QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
+
+    KLocalizedString::setApplicationDomain("notae");
+
     QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
+    QCoreApplication::setApplicationName(QStringLiteral("notae"));
 
     KAboutData aboutData(
                          // The program name used internally.
