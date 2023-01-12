@@ -8,5 +8,7 @@ SPDX-License-Identifier: CC0-1.0
         <file alias="PageHeader.qml">ui/PageHeader.qml</file>
         <file alias="About.qml">ui/About.qml</file>
         <file alias="GlobalMenu.qml">ui/GlobalMenu.qml</file>
+
+        <file alias="WelcomePage.qml">ui/WelcomePage.qml</file>
     </qresource>
 </RCC>

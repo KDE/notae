@@ -76,47 +76,7 @@ Kirigami.ApplicationWindow {
         sourceComponent: GlobalMenu {}
     }
 
-    pageStack.initialPage: welcomePage
-
-    Component {
-        id: welcomePage
-
-        Kirigami.Page {
-            padding: 0
-            titleDelegate: RowLayout {}
-
-            ColumnLayout {
-                anchors.fill: parent
-
-                ColumnLayout {
-                    Layout.alignment: Qt.AlignHCenter
-
-                    QQC2.Button {
-                        Layout.minimumWidth: Kirigami.Units.gridUnit * 8
-
-                        action: Kirigami.Action {
-                            text: i18n("New File")
-                            icon.name: "document-new"
-                            shortcut: StandardKey.New
-                            onTriggered: {
-                                saveFileDialog.open()
-                            }
-                        }
-                    }
-                    QQC2.Button {
-                        Layout.minimumWidth: Kirigami.Units.gridUnit * 8
-
-                        action: Kirigami.Action {
-                            text: i18n("Open File…")
-                            icon.name: "document-open"
-                            shortcut: StandardKey.Open
-                            onTriggered: fileDialog.open()
-                        }
-                    }
-                }
-            }
-        }
-    }
+    pageStack.initialPage: Qt.resolvedUrl("WelcomePage.qml")
 
     Component {
         id: textPage
