@@ -8,6 +8,10 @@ SPDX-FileCopyrightText: 2023 Felipe Kinoshita <kinofhek@gmail.com>
 SPDX-License-Identifier: LGPL-2.0-or-later
 -->
     <group name="General">
+        <entry name="rememberMostRecentFile" type="Bool">
+            <label>Remember most recent file.</label>
+            <default>false</default>
+        </entry>
         <entry name="mostRecentFile" type="String">
             <label>Most recent file.</label>
             <default></default>

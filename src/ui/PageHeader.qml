@@ -140,10 +140,14 @@ RowLayout {
     QQC2.ToolButton {
         display: QQC2.AbstractButton.IconOnly
         action: Kirigami.Action {
-            text: i18n("About Notae (F1)")
-            icon.name: "help-about"
-            shortcut: StandardKey.HelpContents
-            onTriggered: pageStack.layers.push("About.qml")
+            text: i18n("Settings (Ctrl+Shift+,)")
+            icon.name: "settings-configure"
+            shortcut: StandardKey.Preferences
+            onTriggered: pageStack.pushDialogLayer(Qt.resolvedUrl("SettingsPage.qml"), {}, {
+                title: i18n("Configure"),
+                width: root.width - Kirigami.Units.gridUnit * 12,
+                height: root.height - Kirigami.Units.gridUnit * 6
+            })
             enabled: pageStack.layers.depth <= 1
         }
 

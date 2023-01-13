@@ -57,8 +57,10 @@ void FileController::open(QUrl filename)
             QString text = in.readAll();
             file.close();
 
-            Config::self()->setMostRecentFile(m_filename);
-            Config::self()->save();
+            if (Config::self()->rememberMostRecentFile()) {
+                Config::self()->setMostRecentFile(m_filename);
+                Config::self()->save();
+            }
 
             m_isEmptyFile = false;
             Q_EMIT isEmptyFileChanged();
@@ -89,8 +91,10 @@ void FileController::saveAs(QUrl filename)
         m_filename = filename.path();
         Q_EMIT fileChanged(filename.fileName());
 
-        Config::self()->setMostRecentFile(m_filename);
-        Config::self()->save();
+        if (Config::self()->rememberMostRecentFile()) {
+            Config::self()->setMostRecentFile(m_filename);
+            Config::self()->save();
+        }
 
         m_isEmptyFile = false;
         Q_EMIT isEmptyFileChanged();

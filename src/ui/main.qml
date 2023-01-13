@@ -122,9 +122,11 @@ Kirigami.ApplicationWindow {
     }
 
     Component.onCompleted: {
-        if (Config.mostRecentFile.length > 0) {
-            FileController.open(Config.mostRecentFile)
-            pageStack.replace(textPage)
+        if (Config.rememberMostRecentFile) {
+            if (Config.mostRecentFile.length > 0) {
+                FileController.open(Config.mostRecentFile)
+                pageStack.replace(textPage)
+            }
         }
     }
 }

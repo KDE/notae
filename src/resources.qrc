@@ -10,5 +10,6 @@ SPDX-License-Identifier: CC0-1.0
         <file alias="GlobalMenu.qml">ui/GlobalMenu.qml</file>
 
         <file alias="WelcomePage.qml">ui/WelcomePage.qml</file>
+        <file alias="SettingsPage.qml">ui/SettingsPage.qml</file>
     </qresource>
 </RCC>
