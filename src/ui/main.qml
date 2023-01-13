@@ -110,13 +110,22 @@ Kirigami.ApplicationWindow {
                             FileController.save()
                         }
                     }
+                    onCursorPositionChanged: {
+                        if (Config.rememberMostRecentFile) {
+                            Config.lastCursorPosition = cursorPosition
+                            Config.save()
+                        }
+                    }
 
                     SyntaxHighlighter {
                         textEdit: textarea
                         definition: "Markdown"
                     }
 
-                    Component.onCompleted: forceActiveFocus()
+                    Component.onCompleted: {
+                        forceActiveFocus()
+                        cursorPosition = Config.lastCursorPosition
+                    }
                 }
             }
         }
