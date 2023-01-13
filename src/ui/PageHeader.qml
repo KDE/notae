@@ -16,6 +16,35 @@ RowLayout {
     spacing: 0
 
     QQC2.ToolButton {
+        visible: FileController.isEmptyFile
+
+        action: Kirigami.Action {
+            text: i18n("Save")
+            icon.name: "document-save"
+            shortcut: StandardKey.Save
+            onTriggered: saveFileDialog.open()
+            enabled: FileController.isEmptyFile
+        }
+
+        QQC2.ToolTip.visible: hovered
+        QQC2.ToolTip.text: i18n("Save note (Ctrl+S)")
+        QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
+    }
+
+    QQC2.ToolButton {
+        action: Kirigami.Action {
+            text: i18n("New")
+            icon.name: "document-new"
+            shortcut: StandardKey.New
+            onTriggered: FileController.newFile()
+        }
+
+        QQC2.ToolTip.visible: hovered
+        QQC2.ToolTip.text: i18n("Create new note (Ctrl+N)")
+        QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
+    }
+
+    QQC2.ToolButton {
         action: Kirigami.Action {
             text: i18n("Open")
             icon.name: "document-open"

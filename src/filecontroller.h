@@ -19,6 +19,7 @@ public:
     QString documentText();
     void setDocumentText(const QString &text);
 
+    Q_INVOKABLE void newFile();
     Q_INVOKABLE void open(QUrl filename);
     Q_INVOKABLE void save();
     Q_INVOKABLE void saveAs(QUrl filename);

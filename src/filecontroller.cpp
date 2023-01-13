@@ -30,6 +30,20 @@ void FileController::setDocumentText(const QString &text) {
     }
 }
 
+void FileController::newFile()
+{
+    save();
+
+    m_filename = QString();
+    Q_EMIT fileChanged(QString());
+
+    m_isEmptyFile = true;
+    Q_EMIT isEmptyFileChanged();
+
+    m_documentText = QString();
+    Q_EMIT documentTextChanged();
+}
+
 void FileController::open(QUrl filename)
 {
     QFile file(filename.path());
@@ -74,6 +88,13 @@ void FileController::saveAs(QUrl filename)
     if (!filename.isEmpty()) {
         m_filename = filename.path();
         Q_EMIT fileChanged(filename.fileName());
+
+        Config::self()->setMostRecentFile(m_filename);
+        Config::self()->save();
+
+        m_isEmptyFile = false;
+        Q_EMIT isEmptyFileChanged();
+
         save();
     }
 }

@@ -73,7 +73,7 @@ Kirigami.ApplicationWindow {
         sourceComponent: GlobalMenu {}
     }
 
-    pageStack.initialPage: Qt.resolvedUrl("WelcomePage.qml")
+    pageStack.initialPage: textPage/*Qt.resolvedUrl("WelcomePage.qml")*/
 
     Component {
         id: textPage
@@ -104,7 +104,10 @@ Kirigami.ApplicationWindow {
 
                     onTextChanged: {
                         FileController.documentText = text
-                        FileController.save()
+
+                        if (!FileController.isEmptyFile) {
+                            FileController.save()
+                        }
                     }
 
                     SyntaxHighlighter {
