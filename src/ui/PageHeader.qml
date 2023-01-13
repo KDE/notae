@@ -17,6 +17,7 @@ RowLayout {
 
     QQC2.ToolButton {
         visible: FileController.isEmptyFile
+        focusPolicy: Qt.NoFocus
 
         action: Kirigami.Action {
             text: i18n("Save")
@@ -32,6 +33,8 @@ RowLayout {
     }
 
     QQC2.ToolButton {
+        focusPolicy: Qt.NoFocus
+
         action: Kirigami.Action {
             text: i18n("New")
             icon.name: "document-new"
@@ -45,6 +48,8 @@ RowLayout {
     }
 
     QQC2.ToolButton {
+        focusPolicy: Qt.NoFocus
+
         action: Kirigami.Action {
             text: i18n("Open")
             icon.name: "document-open"
