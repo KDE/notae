@@ -1,10 +1,13 @@
 {
     "id": "org.kde.notae",
+    "branch": "master",
     "runtime": "org.kde.Platform",
     "runtime-version": "5.15-22.08",
     "sdk": "org.kde.Sdk",
     "command": "notae",
-    "tags": ["nightly"],
+    "tags": [
+        "nightly"
+    ],
     "desktop-file-name-suffix": " (Nightly)",
     "finish-args": [
         "--share=ipc",
@@ -14,7 +17,6 @@
         "--device=dri",
         "--filesystem=home"
     ],
-    "separate-locales": false,
     "modules": [
         {
             "name": "kirigamiaddons",
@@ -26,7 +28,7 @@
             "name": "notae",
             "buildsystem": "cmake-ninja",
             "builddir": true,
-            "sources": [ { "type": "dir", "path": ".", "skip": [".git"] } ]
+            "sources": [ { "type": "dir", "path": "." } ]
         }
     ]
 }
