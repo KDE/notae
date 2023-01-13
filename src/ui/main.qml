@@ -99,6 +99,7 @@ Kirigami.ApplicationWindow {
                     }
 
                     text: FileController.documentText
+                    placeholderText: i18n("Start typing…")
                     wrapMode: Text.Wrap
                     font.pointSize: 11
 
