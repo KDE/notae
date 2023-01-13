@@ -73,7 +73,7 @@ Kirigami.ApplicationWindow {
         sourceComponent: GlobalMenu {}
     }
 
-    pageStack.initialPage: textPage/*Qt.resolvedUrl("WelcomePage.qml")*/
+    pageStack.initialPage: textPage
 
     Component {
         id: textPage
