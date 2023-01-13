@@ -89,8 +89,8 @@ Kirigami.ApplicationWindow {
                     id: textarea
 
                     padding: Kirigami.Units.gridUnit
-                    leftPadding: Kirigami.Units.gridUnit + (root.width / 8)
-                    rightPadding: Kirigami.Units.gridUnit + (root.width / 8)
+                    leftPadding: Kirigami.Units.gridUnit + Math.floor(root.width / 8)
+                    rightPadding: Kirigami.Units.gridUnit + Math.floor(root.width / 8)
 
                     background: Rectangle {
                         Kirigami.Theme.colorSet: Kirigami.Theme.View
