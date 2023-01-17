@@ -102,6 +102,23 @@ RowLayout {
     }
 
     QQC2.ToolButton {
+        focusPolicy: Qt.NoFocus
+
+        display: QQC2.AbstractButton.IconOnly
+        action: Kirigami.Action {
+            text: i18n("Cut selection to clipboard (Ctrl+X)")
+            icon.name: "edit-cut"
+            shortcut: StandardKey.Cut
+            enabled: !textarea.selectedText.length <= 0
+            onTriggered: textarea.cut()
+        }
+
+        QQC2.ToolTip.visible: hovered
+        QQC2.ToolTip.text: text
+        QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
+    }
+
+    QQC2.ToolButton {
         display: QQC2.AbstractButton.IconOnly
         action: Kirigami.Action {
             text: i18n("Undo last action (Ctrl+Z)")
