@@ -132,12 +132,6 @@ Kirigami.ApplicationWindow {
                             FileController.save()
                         }
                     }
-                    onCursorPositionChanged: {
-                        if (Config.rememberMostRecentFile) {
-                            Config.lastCursorPosition = cursorPosition
-                            Config.save()
-                        }
-                    }
 
                     SyntaxHighlighter {
                         textEdit: textarea
@@ -146,7 +140,6 @@ Kirigami.ApplicationWindow {
 
                     Component.onCompleted: {
                         forceActiveFocus()
-                        cursorPosition = Config.lastCursorPosition
                     }
                 }
             }
