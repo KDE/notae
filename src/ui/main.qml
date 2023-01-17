@@ -18,7 +18,7 @@ Kirigami.ApplicationWindow {
 
     width: Kirigami.Units.gridUnit * 50
     height: Kirigami.Units.gridUnit * 40
-    minimumWidth: Kirigami.Units.gridUnit * 20
+    minimumWidth: Kirigami.Units.gridUnit * 30
     minimumHeight: Kirigami.Units.gridUnit * 20
 
      FileDialog {
