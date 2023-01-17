@@ -11,6 +11,9 @@
 FileController::FileController(QObject *parent)
     : QObject(parent)
 {
+    m_watcher = new KDirWatch;
+    QObject::connect(m_watcher, &KDirWatch::dirty, this, &FileController::slotFileChanged);
+    QObject::connect(m_watcher, &KDirWatch::deleted, this, &FileController::slotFileDeleted);
 }
 
 bool FileController::isEmptyFile()
@@ -32,8 +35,6 @@ void FileController::setDocumentText(const QString &text) {
 
 void FileController::newFile()
 {
-    save();
-
     m_filename = QString();
     Q_EMIT fileChanged(QString());
 
@@ -52,6 +53,8 @@ void FileController::open(QUrl filename)
         if (file.open(QFile::ReadOnly | QFile::Text)) {
             m_filename = filename.path();
             Q_EMIT fileChanged(filename.fileName());
+
+            m_watcher->addFile(m_filename);
 
             QTextStream in(&file);
             QString text = in.readAll();
@@ -91,6 +94,8 @@ void FileController::saveAs(QUrl filename)
         m_filename = filename.path();
         Q_EMIT fileChanged(filename.fileName());
 
+        m_watcher->addFile(m_filename);
+
         if (Config::self()->rememberMostRecentFile()) {
             Config::self()->setMostRecentFile(m_filename);
             Config::self()->save();
@@ -101,4 +106,16 @@ void FileController::saveAs(QUrl filename)
 
         save();
     }
+}
+
+void FileController::slotFileChanged(const QString &path)
+{
+    if (m_watcher->contains(path)) {
+        open(path);
+    }
+}
+
+void FileController::slotFileDeleted()
+{
+    newFile();
 }

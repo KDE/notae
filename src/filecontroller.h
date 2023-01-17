@@ -6,6 +6,8 @@
 #include <QObject>
 #include <QUrl>
 
+#include <KDirWatch>
+
 class FileController : public QObject
 {
     Q_OBJECT
@@ -28,8 +30,14 @@ public:
     Q_SIGNAL void isEmptyFileChanged();
     Q_SIGNAL void documentTextChanged();
 
+private Q_SLOTS:
+    void slotFileChanged(const QString &path);
+    void slotFileDeleted();
+
 private:
     QString m_filename;
     QString m_documentText;
     bool m_isEmptyFile = true;
+
+    KDirWatch* m_watcher;
 };
