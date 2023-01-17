@@ -43,6 +43,24 @@ Kirigami.PageRow {
                             Config.save()
                         }
                     }
+
+                    MobileForm.FormDelegateSeparator {}
+
+                    MobileForm.FormSwitchDelegate {
+                        text: i18n("Show Toolbar")
+
+                        checked: Config.showToolbar
+                        onToggled: {
+                            Config.showToolbar = checked
+                            Config.save()
+                        }
+                    }
+
+                    MobileForm.FormSectionText {
+                        text: i18n("Toggle it by pressing Ctrl+,")
+                    }
+
+                    MobileForm.FormDelegateSeparator {}
                 }
             }
 

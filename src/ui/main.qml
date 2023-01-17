@@ -74,13 +74,35 @@ Kirigami.ApplicationWindow {
     }
 
     pageStack.initialPage: textPage
+    pageStack.globalToolBar.style: Config.showToolbar ? Kirigami.ApplicationHeaderStyle.ToolBar : Kirigami.ApplicationHeaderStyle.None
+
+    Kirigami.Separator {
+        visible: !Config.showToolbar
+        anchors.top: parent.top
+        anchors.left: parent.left
+        anchors.right: parent.right
+    }
 
     Component {
         id: textPage
 
         Kirigami.Page {
             padding: 0
-            titleDelegate: PageHeader {}
+            titleDelegate: Loader {
+                Layout.fillWidth: true
+
+                active: Config.showToolbar
+                asynchronous: true
+                sourceComponent: PageHeader {}
+            }
+
+            Shortcut {
+                sequence: "Ctrl+,"
+                onActivated: {
+                    Config.showToolbar = !Config.showToolbar
+                    Config.save()
+                }
+            }
 
             QQC2.ScrollView {
                 anchors.fill: parent

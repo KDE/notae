@@ -20,5 +20,9 @@ SPDX-License-Identifier: LGPL-2.0-or-later
             <label>Last cursor position.</label>
             <default>0</default>
         </entry>
+        <entry name="showToolbar" type="Bool">
+            <label>Show toolbar.</label>
+            <default>true</default>
+        </entry>
     </group>
 </kcfg>
