@@ -165,11 +165,17 @@ RowLayout {
             text: i18n("Settings (Ctrl+Shift+,)")
             icon.name: "settings-configure"
             shortcut: StandardKey.Preferences
-            onTriggered: pageStack.pushDialogLayer(Qt.resolvedUrl("SettingsPage.qml"), {}, {
-                title: i18n("Configure"),
-                width: root.width - Kirigami.Units.gridUnit * 12,
-                height: root.height - Kirigami.Units.gridUnit * 6
-            })
+            onTriggered: {
+                if (!Kirigami.Settings.isMobile) {
+                    pageStack.pushDialogLayer(Qt.resolvedUrl("SettingsPage.qml"), {}, {
+                        title: i18n("Configure"),
+                        width: root.width - Kirigami.Units.gridUnit * 12,
+                        height: root.height - Kirigami.Units.gridUnit * 6
+                    })
+                } else {
+                    pageStack.layers.push(Qt.resolvedUrl("SettingsPage.qml"))
+                }
+            }
             enabled: pageStack.layers.depth <= 1
         }
 
