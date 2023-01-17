@@ -27,7 +27,6 @@ Kirigami.ApplicationWindow {
         nameFilters: ["Markdown files (*.md)", "Text files (*.txt)"]
         onAccepted: {
             FileController.open(fileDialog.file)
-            pageStack.replace(textPage)
         }
     }
 
@@ -38,7 +37,6 @@ Kirigami.ApplicationWindow {
         defaultSuffix: "md"
         onAccepted: {
             FileController.saveAs(saveFileDialog.file)
-            pageStack.replace(textPage)
         }
     }
 
@@ -150,7 +148,6 @@ Kirigami.ApplicationWindow {
         if (Config.rememberMostRecentFile) {
             if (Config.mostRecentFile.length > 0) {
                 FileController.open(Config.mostRecentFile)
-                pageStack.replace(textPage)
             }
         }
     }
