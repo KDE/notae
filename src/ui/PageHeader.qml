@@ -16,24 +16,6 @@ RowLayout {
     spacing: 0
 
     QQC2.ToolButton {
-        visible: FileController.isEmptyFile
-        focusPolicy: Qt.NoFocus
-        display: Kirigami.Settings.isMobile ? QQC2.AbstractButton.IconOnly : QQC2.AbstractButton.TextBesideIcon
-
-        action: Kirigami.Action {
-            text: i18n("Save")
-            icon.name: "document-save"
-            shortcut: StandardKey.Save
-            onTriggered: saveFileDialog.open()
-            enabled: FileController.isEmptyFile
-        }
-
-        QQC2.ToolTip.visible: hovered
-        QQC2.ToolTip.text: i18n("Save note (Ctrl+S)")
-        QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
-    }
-
-    QQC2.ToolButton {
         focusPolicy: Qt.NoFocus
         display: Kirigami.Settings.isMobile ? QQC2.AbstractButton.IconOnly : QQC2.AbstractButton.TextBesideIcon
 
@@ -65,9 +47,44 @@ RowLayout {
         QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
     }
 
+    QQC2.ToolButton {
+        visible: FileController.isEmptyFile
+        focusPolicy: Qt.NoFocus
+        display: Kirigami.Settings.isMobile ? QQC2.AbstractButton.IconOnly : QQC2.AbstractButton.TextBesideIcon
+
+        action: Kirigami.Action {
+            text: i18n("Save")
+            icon.name: "document-save"
+            shortcut: StandardKey.Save
+            onTriggered: saveFileDialog.open()
+            enabled: FileController.isEmptyFile
+        }
+
+        QQC2.ToolTip.visible: hovered
+        QQC2.ToolTip.text: i18n("Save note (Ctrl+S)")
+        QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
+    }
+
     QQC2.ToolSeparator {
         Layout.leftMargin: Kirigami.Units.largeSpacing
         Layout.rightMargin: Kirigami.Units.largeSpacing
+    }
+
+    QQC2.ToolButton {
+        focusPolicy: Qt.NoFocus
+
+        display: QQC2.AbstractButton.IconOnly
+        action: Kirigami.Action {
+            text: i18n("Cut selection to clipboard (Ctrl+X)")
+            icon.name: "edit-cut"
+            shortcut: StandardKey.Cut
+            enabled: !textarea.selectedText.length <= 0
+            onTriggered: textarea.cut()
+        }
+
+        QQC2.ToolTip.visible: hovered
+        QQC2.ToolTip.text: text
+        QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
     }
 
     QQC2.ToolButton {
@@ -97,23 +114,6 @@ RowLayout {
             shortcut: StandardKey.Paste
             enabled: textarea.canPaste
             onTriggered: textarea.paste()
-        }
-
-        QQC2.ToolTip.visible: hovered
-        QQC2.ToolTip.text: text
-        QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
-    }
-
-    QQC2.ToolButton {
-        focusPolicy: Qt.NoFocus
-
-        display: QQC2.AbstractButton.IconOnly
-        action: Kirigami.Action {
-            text: i18n("Cut selection to clipboard (Ctrl+X)")
-            icon.name: "edit-cut"
-            shortcut: StandardKey.Cut
-            enabled: !textarea.selectedText.length <= 0
-            onTriggered: textarea.cut()
         }
 
         QQC2.ToolTip.visible: hovered
