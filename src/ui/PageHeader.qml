@@ -163,6 +163,8 @@ RowLayout {
     }
 
     QQC2.ToolButton {
+        focusPolicy: Qt.NoFocus
+
         display: Kirigami.Settings.isMobile ? QQC2.AbstractButton.IconOnly : QQC2.AbstractButton.TextBesideIcon
         action: Kirigami.Action {
             text: i18n("Settings")
