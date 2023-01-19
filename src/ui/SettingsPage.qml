@@ -42,6 +42,9 @@ Kirigami.ScrollablePage {
                 MobileForm.FormDelegateSeparator {}
 
                 MobileForm.FormSwitchDelegate {
+                    visible: !Kirigami.Settings.isMobile
+                    enabled: !Kirigami.Settings.isMobile
+
                     text: i18n("Show Toolbar")
 
                     checked: Config.showToolbar
@@ -52,6 +55,7 @@ Kirigami.ScrollablePage {
                 }
 
                 MobileForm.FormSectionText {
+                    visible: !Kirigami.Settings.isMobile
                     text: i18n("Toggle it by pressing Ctrl+,")
                 }
 
