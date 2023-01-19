@@ -73,9 +73,9 @@ RowLayout {
     QQC2.ToolButton {
         focusPolicy: Qt.NoFocus
 
-        display: QQC2.AbstractButton.IconOnly
+        display: Kirigami.Settings.isMobile ? QQC2.AbstractButton.IconOnly : QQC2.AbstractButton.TextBesideIcon
         action: Kirigami.Action {
-            text: i18n("Cut selection to clipboard (Ctrl+X)")
+            text: i18n("Cut")
             icon.name: "edit-cut"
             shortcut: StandardKey.Cut
             enabled: !textarea.selectedText.length <= 0
@@ -83,16 +83,16 @@ RowLayout {
         }
 
         QQC2.ToolTip.visible: hovered
-        QQC2.ToolTip.text: text
+        QQC2.ToolTip.text: i18n("Cut selection to clipboard (Ctrl+X)")
         QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
     }
 
     QQC2.ToolButton {
         focusPolicy: Qt.NoFocus
 
-        display: QQC2.AbstractButton.IconOnly
+        display: Kirigami.Settings.isMobile ? QQC2.AbstractButton.IconOnly : QQC2.AbstractButton.TextBesideIcon
         action: Kirigami.Action {
-            text: i18n("Copy selection to clipboard (Ctrl+C)")
+            text: i18n("Copy")
             icon.name: "edit-copy"
             shortcut: StandardKey.Copy
             enabled: textarea.selectedText.length > 0
@@ -100,16 +100,16 @@ RowLayout {
         }
 
         QQC2.ToolTip.visible: hovered
-        QQC2.ToolTip.text: text
+        QQC2.ToolTip.text: i18n("Copy selection to clipboard (Ctrl+C)")
         QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
     }
 
     QQC2.ToolButton {
         focusPolicy: Qt.NoFocus
 
-        display: QQC2.AbstractButton.IconOnly
+        display: Kirigami.Settings.isMobile ? QQC2.AbstractButton.IconOnly : QQC2.AbstractButton.TextBesideIcon
         action: Kirigami.Action {
-            text: i18n("Paste clipboard content (Ctrl+V)")
+            text: i18n("Paste")
             icon.name: "edit-paste"
             shortcut: StandardKey.Paste
             enabled: textarea.canPaste
@@ -117,14 +117,14 @@ RowLayout {
         }
 
         QQC2.ToolTip.visible: hovered
-        QQC2.ToolTip.text: text
+        QQC2.ToolTip.text: i18n("Paste clipboard content (Ctrl+V)")
         QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
     }
 
     QQC2.ToolButton {
-        display: QQC2.AbstractButton.IconOnly
+        display: Kirigami.Settings.isMobile ? QQC2.AbstractButton.IconOnly : QQC2.AbstractButton.TextBesideIcon
         action: Kirigami.Action {
-            text: i18n("Undo last action (Ctrl+Z)")
+            text: i18n("Undo")
             icon.name: "edit-undo"
             shortcut: StandardKey.Undo
             enabled: textarea.canUndo
@@ -132,16 +132,16 @@ RowLayout {
         }
 
         QQC2.ToolTip.visible: hovered
-        QQC2.ToolTip.text: text
+        QQC2.ToolTip.text: i18n("Undo last action (Ctrl+Z)")
         QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
     }
 
     QQC2.ToolButton {
         focusPolicy: Qt.NoFocus
 
-        display: QQC2.AbstractButton.IconOnly
+        display: Kirigami.Settings.isMobile ? QQC2.AbstractButton.IconOnly : QQC2.AbstractButton.TextBesideIcon
         action: Kirigami.Action {
-            text: i18n("Redo last undone action (Ctrl+Shift+Z)")
+            text: i18n("Redo")
             icon.name: "edit-redo"
             shortcut: StandardKey.Redo
             enabled: textarea.canRedo
@@ -149,7 +149,7 @@ RowLayout {
         }
 
         QQC2.ToolTip.visible: hovered
-        QQC2.ToolTip.text: text
+        QQC2.ToolTip.text: i18n("Redo last undone action (Ctrl+Shift+Z)")
         QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
     }
 
@@ -163,9 +163,9 @@ RowLayout {
     }
 
     QQC2.ToolButton {
-        display: QQC2.AbstractButton.IconOnly
+        display: Kirigami.Settings.isMobile ? QQC2.AbstractButton.IconOnly : QQC2.AbstractButton.TextBesideIcon
         action: Kirigami.Action {
-            text: i18n("Settings (Ctrl+Shift+,)")
+            text: i18n("Settings")
             icon.name: "settings-configure"
             shortcut: StandardKey.Preferences
             onTriggered: {
@@ -183,7 +183,7 @@ RowLayout {
         }
 
         QQC2.ToolTip.visible: hovered
-        QQC2.ToolTip.text: text
+        QQC2.ToolTip.text: i18n("Configure Notae (Ctrl+Shift+,)")
         QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
     }
 }
