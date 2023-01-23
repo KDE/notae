@@ -20,7 +20,6 @@
 
   <url type="homepage">https://invent.kde.org/fhek/notae</url>
   <url type="bugtracker">https://invent.kde.org/fhek/notae/-/issues</url>
-  <url type="donation">https://kde.org/community/donations/?app=org.kde.notae</url>
   <developer_name>KDE Community, Felipe Kinoshita</developer_name>
 
   <recommends>
