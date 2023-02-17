@@ -3,7 +3,7 @@
 
 [Desktop Entry]
 Name=Notae
-Comment=Note Taking Application
+Comment=Take notes easily
 Exec=notae
 Icon=org.kde.notae
 Type=Application

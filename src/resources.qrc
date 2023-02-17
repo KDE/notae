@@ -5,9 +5,7 @@ SPDX-License-Identifier: CC0-1.0
 -->
     <qresource prefix="/">
         <file alias="main.qml">ui/main.qml</file>
-        <file alias="PageHeader.qml">ui/PageHeader.qml</file>
-        <file alias="GlobalMenu.qml">ui/GlobalMenu.qml</file>
 
-        <file alias="SettingsPage.qml">ui/SettingsPage.qml</file>
+        <file alias="TextEditor.qml">ui/TextEditor.qml</file>
     </qresource>
 </RCC>

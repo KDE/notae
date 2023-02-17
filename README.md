@@ -21,4 +21,3 @@ some app store (discover, gnome-software, etc...) or run:
 ```bash
 $ flatpak install notae.flatpak
 ```
-

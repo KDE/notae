@@ -20,7 +20,7 @@ constexpr auto APPLICATION_ID = "org.kde.notae";
 #include "version-notae.h"
 #include "config.h"
 #include "app.h"
-#include "filecontroller.h"
+#include "documenthandler.h"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
@@ -41,7 +41,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
                          // The program version string.
                          QStringLiteral(NOTAE_VERSION_STRING),
                          // Short description of what the app does.
-                         i18n("Note Taking Application"),
+                         i18n("Take notes easily"),
                          // The license this code is released under.
                          KAboutLicense::GPL,
                          // Copyright Statement.
@@ -56,12 +56,12 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     auto config = Config::self();
     AboutType about;
     App application;
-    FileController fileController;
 
     qmlRegisterSingletonInstance(APPLICATION_ID, 1, 0, "Config", config);
     qmlRegisterSingletonInstance(APPLICATION_ID, 1, 0, "AboutType", &about);
     qmlRegisterSingletonInstance(APPLICATION_ID, 1, 0, "App", &application);
-    qmlRegisterSingletonInstance(APPLICATION_ID, 1, 0, "FileController", &fileController);
+
+    qmlRegisterType<DocumentHandler>(APPLICATION_ID, 1, 0, "DocumentHandler");
 
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
     KLocalizedString::setApplicationDomain("notae");

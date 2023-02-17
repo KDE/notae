@@ -7,38 +7,19 @@ import QtQuick.Layouts 1.15
 import Qt.labs.platform 1.1
 
 import org.kde.kirigami 2.20 as Kirigami
-import org.kde.syntaxhighlighting 1.0
 
 import org.kde.notae 1.0
 
-Kirigami.ApplicationWindow {
+QQC2.ApplicationWindow {
     id: root
 
+    visible: true
     title: i18n("Notae")
 
-    width: Kirigami.Units.gridUnit * 50
-    height: Kirigami.Units.gridUnit * 40
-    minimumWidth: Kirigami.Units.gridUnit * 30
-    minimumHeight: Kirigami.Units.gridUnit * 20
-
-     FileDialog {
-        id: fileDialog
-        title: i18n("Open File")
-        nameFilters: ["Markdown files (*.md)", "Text files (*.txt)"]
-        onAccepted: {
-            FileController.open(fileDialog.file)
-        }
-    }
-
-    FileDialog {
-        id: saveFileDialog
-        title: i18n("Save File As")
-        fileMode: FileDialog.SaveFile
-        defaultSuffix: "md"
-        onAccepted: {
-            FileController.saveAs(saveFileDialog.file)
-        }
-    }
+    width: Kirigami.Units.gridUnit * 25
+    height: Kirigami.Units.gridUnit * 33
+    minimumWidth: Kirigami.Units.gridUnit * 25
+    minimumHeight: Kirigami.Units.gridUnit * 15
 
     Timer {
         id: saveWindowGeometryTimer
@@ -47,108 +28,238 @@ Kirigami.ApplicationWindow {
     }
 
     Connections {
-        target: FileController
-
-        function onFileChanged(title) {
-            root.title = title
-        }
-    }
-
-    Connections {
         id: saveWindowGeometryConnections
         enabled: root.visible
         target: root
 
-        function onClosing() { App.saveWindowGeometry(root); }
-        function onWidthChanged() { saveWindowGeometryTimer.restart(); }
-        function onHeightChanged() { saveWindowGeometryTimer.restart(); }
-        function onXChanged() { saveWindowGeometryTimer.restart(); }
-        function onYChanged() { saveWindowGeometryTimer.restart(); }
+        function onClosing() { App.saveWindowGeometry(root) }
+        function onWidthChanged() { saveWindowGeometryTimer.restart() }
+        function onHeightChanged() { saveWindowGeometryTimer.restart() }
+        function onXChanged() { saveWindowGeometryTimer.restart() }
+        function onYChanged() { saveWindowGeometryTimer.restart() }
     }
 
-    Loader {
-        active: !Kirigami.Settings.isMobile
-        sourceComponent: GlobalMenu {}
-    }
+    component ToolBar : Item {
+        default property alias children: headerLayout.children
 
-    pageStack.initialPage: textPage
-    pageStack.globalToolBar.style: Config.showToolbar ? Kirigami.ApplicationHeaderStyle.ToolBar : Kirigami.ApplicationHeaderStyle.None
+        width: root.width
+        height: headerLayout.implicitHeight + (headerLayout.anchors.margins * 2)
 
-    Kirigami.Separator {
-        visible: !Config.showToolbar
-        anchors.top: parent.top
-        anchors.left: parent.left
-        anchors.right: parent.right
-    }
+        Kirigami.AbstractApplicationHeader {
+            id: headerToolbar
 
-    Component {
-        id: textPage
+            anchors.top: parent.top
+            anchors.bottom: separator.top
+            width: parent.width
+            visible: true
 
-        Kirigami.Page {
-            padding: 0
-            titleDelegate: Loader {
-                Layout.fillWidth: true
+            contentItem: RowLayout {
+                id: headerLayout
 
-                active: Config.showToolbar
-                asynchronous: true
-                sourceComponent: PageHeader {}
-            }
-
-            Shortcut {
-                sequence: "Ctrl+,"
-                onActivated: {
-                    Config.showToolbar = !Config.showToolbar
-                    Config.save()
-                }
-            }
-
-            QQC2.ScrollView {
                 anchors.fill: parent
+                anchors.margins: Kirigami.Units.smallSpacing
 
-                QQC2.TextArea {
-                    id: textarea
+                spacing: Kirigami.Units.smallSpacing
+            }
+        }
+        Kirigami.Separator {
+            id: separator
 
-                    padding: Kirigami.Units.gridUnit
-                    leftPadding: Kirigami.Units.gridUnit + Math.floor(root.width / 8)
-                    rightPadding: Kirigami.Units.gridUnit + Math.floor(root.width / 8)
+            visible: !headerToolbar.visible
+            anchors.bottom: parent.bottom
+            width: parent.width
+        }
+    }
 
-                    background: Rectangle {
-                        Kirigami.Theme.colorSet: Kirigami.Theme.View
-                        Kirigami.Theme.inherit: false
-                        color: Kirigami.Theme.backgroundColor
-                    }
+    FileDialog {
+        id: openDialog
 
-                    text: FileController.documentText
-                    placeholderText: i18n("Start typing…")
-                    wrapMode: Text.Wrap
-                    font.pointSize: 11
+        nameFilters: ["Markdown files (*.md)", "Text files (*.txt)"]
 
-                    onTextChanged: {
-                        FileController.documentText = text
+        onAccepted: textEditor.document.fileUrl = currentFile
+    }
 
-                        if (!FileController.isEmptyFile) {
-                            FileController.save()
-                        }
-                    }
+    FileDialog {
+        id: saveDialog
 
-                    SyntaxHighlighter {
-                        textEdit: textarea
-                        definition: "Markdown"
-                    }
+        fileMode: FileDialog.SaveFile
+        onAccepted: textEditor.document.saveAs(currentFile)
+    }
 
-                    Component.onCompleted: {
-                        forceActiveFocus()
+    header: Loader {
+        active: true
+        sourceComponent: ToolBar {
+            QQC2.ToolButton {
+                focusPolicy: Qt.NoFocus
+                display: QQC2.AbstractButton.IconOnly
+
+                action: Kirigami.Action {
+                    text: i18n("New")
+                    icon.name: "document-new"
+                    shortcut: StandardKey.New
+                    onTriggered: {
+                        textEditor.document.saveAs(textEditor.document.fileUrl)
+                        textEditor.document.fileUrl = ""
+                        textEditor.body.text = ""
                     }
                 }
+
+                QQC2.ToolTip.visible: hovered
+                QQC2.ToolTip.text: i18n("Create new document (Ctrl+N)")
+                QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
+            }
+
+            QQC2.ToolButton {
+                focusPolicy: Qt.NoFocus
+                display: QQC2.AbstractButton.IconOnly
+
+                action: Kirigami.Action {
+                    text: i18n("Open…")
+                    icon.name: "document-open"
+                    shortcut: StandardKey.Open
+                    onTriggered: openDialog.open()
+                }
+
+                QQC2.ToolTip.visible: hovered
+                QQC2.ToolTip.text: i18n("Open an existing note (Ctrl+O)")
+                QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
+            }
+
+            QQC2.ToolButton {
+                focusPolicy: Qt.NoFocus
+                display: QQC2.AbstractButton.IconOnly
+
+                action: Kirigami.Action {
+                    text: textEditor.document.fileUrl == "" ? i18n("Save As…") : i18n("Save")
+                    icon.name: textEditor.document.fileUrl == "" ? "document-save-as" : "document-save"
+                    shortcut: StandardKey.Save
+                    onTriggered: {
+                        if (textEditor.document.fileUrl == "") {
+                            saveDialog.open()
+                            return
+                        }
+
+                        textEditor.document.saveAs(textEditor.document.fileUrl)
+                    }
+                }
+
+                QQC2.ToolTip.visible: hovered
+                QQC2.ToolTip.text: textEditor.document.fileUrl == "" ? i18n("Save new document (Ctrl+Shift+S)") : i18n("Save document (Ctrl+S)")
+                QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
+            }
+
+            QQC2.ToolSeparator {
+                Layout.leftMargin: Kirigami.Units.largeSpacing
+                Layout.rightMargin: Kirigami.Units.largeSpacing
+            }
+
+            QQC2.ToolButton {
+                focusPolicy: Qt.NoFocus
+
+                display: QQC2.AbstractButton.IconOnly
+                action: Kirigami.Action {
+                    text: i18n("Cut")
+                    icon.name: "edit-cut"
+                    shortcut: StandardKey.Cut
+                    enabled: !textEditor.body.selectedText.length <= 0
+                    onTriggered: textEditor.body.cut()
+                }
+
+                QQC2.ToolTip.visible: hovered
+                QQC2.ToolTip.text: i18n("Cut selection to clipboard (Ctrl+X)")
+                QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
+            }
+
+            QQC2.ToolButton {
+                focusPolicy: Qt.NoFocus
+
+                display: QQC2.AbstractButton.IconOnly
+                action: Kirigami.Action {
+                    text: i18n("Copy")
+                    icon.name: "edit-copy"
+                    shortcut: StandardKey.Copy
+                    enabled: textEditor.body.selectedText.length > 0
+                    onTriggered: textEditor.body.copy()
+                }
+
+                QQC2.ToolTip.visible: hovered
+                QQC2.ToolTip.text: i18n("Copy selection to clipboard (Ctrl+C)")
+                QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
+            }
+
+            QQC2.ToolButton {
+                focusPolicy: Qt.NoFocus
+
+                display: QQC2.AbstractButton.IconOnly
+                action: Kirigami.Action {
+                    text: i18n("Paste")
+                    icon.name: "edit-paste"
+                    shortcut: StandardKey.Paste
+                    enabled: textEditor.canPaste
+                    onTriggered: textEditor.body.paste()
+                }
+
+                QQC2.ToolTip.visible: hovered
+                QQC2.ToolTip.text: i18n("Paste clipboard content (Ctrl+V)")
+                QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
+            }
+
+            QQC2.ToolSeparator {
+                Layout.leftMargin: Kirigami.Units.largeSpacing
+                Layout.rightMargin: Kirigami.Units.largeSpacing
+            }
+
+            QQC2.ToolButton {
+                display: QQC2.AbstractButton.IconOnly
+                action: Kirigami.Action {
+                    text: i18n("Undo")
+                    icon.name: "edit-undo"
+                    shortcut: StandardKey.Undo
+                    enabled: textEditor.canUndo
+                    onTriggered: textEditor.body.undo()
+                }
+
+                QQC2.ToolTip.visible: hovered
+                QQC2.ToolTip.text: i18n("Undo last action (Ctrl+Z)")
+                QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
+            }
+
+            QQC2.ToolButton {
+                focusPolicy: Qt.NoFocus
+
+                display: QQC2.AbstractButton.IconOnly
+                action: Kirigami.Action {
+                    text: i18n("Redo")
+                    icon.name: "edit-redo"
+                    shortcut: StandardKey.Redo
+                    enabled: textEditor.canRedo
+                    onTriggered: textEditor.body.redo()
+                }
+
+                QQC2.ToolTip.visible: hovered
+                QQC2.ToolTip.text: i18n("Redo last undone action (Ctrl+Shift+Z)")
+                QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
+            }
+
+            QQC2.ToolSeparator {
+                Layout.leftMargin: Kirigami.Units.largeSpacing
+                Layout.rightMargin: Kirigami.Units.largeSpacing
+            }
+
+            Item {
+                Layout.fillWidth: true
             }
         }
     }
 
-    Component.onCompleted: {
-        if (Config.rememberMostRecentFile) {
-            if (Config.mostRecentFile.length > 0) {
-                FileController.open(Config.mostRecentFile)
-            }
-        }
+    TextEditor {
+        id: textEditor
+
+        anchors.fill: parent
+
+        body.font.family: "Monospace"
+        document.tabSpace: Kirigami.Units.gridUnit * 2
+        document.enableSyntaxHighlighting: true
+        document.autoSave: false//Config.autoSave
     }
 }
