@@ -9,7 +9,7 @@ Dependencies:
     'frameworks/kconfig': '@stable'
     'frameworks/ki18n': '@stable'
     'frameworks/kirigami': '@stable'
-    'libraries/kirigami-addons': '@latest'
+    'frameworks/syntax-highlighting' : '@stable'
 
 - 'on': ['Linux', 'FreeBSD', 'macOS', 'Windows']
   'require':
