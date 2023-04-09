@@ -11,7 +11,12 @@
 #include <QQmlFileSelector>
 #include <QQuickTextDocument>
 #include <QTextCharFormat>
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 #include <QTextCodec>
+#else
+#include <QStringConverter>
+#include <QStringDecoder>
+#endif
 #include <QTextDocument>
 #include <QTextDocumentWriter>
 #include <QUrl>
@@ -39,8 +44,15 @@ void FileLoader::loadFile(const QUrl &url)
         QFile file(url.toLocalFile());
         if (file.open(QFile::ReadOnly)) {
             const auto array = file.readAll();
+#if QT_VERSION > QT_VERSION_CHECK(6, 0, 0)
+            auto encoding = QStringConverter::encodingForData(array);
+            if (encoding.has_value()) {
+                Q_EMIT this->fileReady(QStringDecoder(*encoding).decode(array), url);
+            }
+#else
             QTextCodec *codec = QTextDocumentWriter(url.toLocalFile()).codec();
             Q_EMIT this->fileReady(codec->toUnicode(array), url);
+#endif
         }
     }
 }

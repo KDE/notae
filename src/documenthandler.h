@@ -13,11 +13,11 @@
 #include <QTimer>
 #include <QUrl>
 #include <qstringliteral.h>
+#include <QQuickTextDocument>
 
 QT_BEGIN_NAMESPACE
 class QFileSystemWatcher;
 class QTextDocument;
-class QQuickTextDocument;
 QT_END_NAMESPACE
 
 namespace KSyntaxHighlighting
