@@ -9,9 +9,9 @@ A simple note taking application that automatically saves your work.
 To build a flatpak bundle of Notae use the following instructions:
 
 ```bash
-$ git clone https://invent.kde.org/fhek/notae.git
+$ git clone https://invent.kde.org/utilities/notae.git
 $ cd notae
-$ flatpak-builder --repo=repo build-dir --force-clean org.kde.notae.json --install-deps-from=flathub
+$ flatpak-builder --repo=repo build-dir --force-clean .flatpak-manifest.json --install-deps-from=flathub
 $ flatpak build-bundle repo template.flatpak org.kde.notae
 ```
 
