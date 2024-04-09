@@ -21,7 +21,10 @@
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
+    // Default to org.kde.desktop style unless the user forces another style
+    if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
+        QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
+    }
 
     KLocalizedString::setApplicationDomain("notae");
 
