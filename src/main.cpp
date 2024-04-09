@@ -13,10 +13,10 @@
 #include <KLocalizedContext>
 #include <KLocalizedString>
 
-#include "version-notae.h"
-#include "config.h"
 #include "app.h"
+#include "config.h"
 #include "documenthandler.h"
+#include "version-notae.h"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
@@ -29,19 +29,22 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QCoreApplication::setApplicationName(QStringLiteral("notae"));
 
     KAboutData aboutData(
-                         // The program name used internally.
-                         QStringLiteral("notae"),
-                         // A displayable program name string.
-                         i18nc("@title", "Notae"),
-                         // The program version string.
-                         QStringLiteral(NOTAE_VERSION_STRING),
-                         // Short description of what the app does.
-                         i18n("Take notes easily"),
-                         // The license this code is released under.
-                         KAboutLicense::GPL,
-                         // Copyright Statement.
-                         i18n("© Felipe Kinoshita 2023"));
-    aboutData.addAuthor(i18nc("@info:credit", "Felipe Kinoshita"), i18nc("@info:credit", "Author"), QStringLiteral("kinofhek@gmail.com"), QStringLiteral("https://fhek.gitlab.io"));
+        // The program name used internally.
+        QStringLiteral("notae"),
+        // A displayable program name string.
+        i18nc("@title", "Notae"),
+        // The program version string.
+        QStringLiteral(NOTAE_VERSION_STRING),
+        // Short description of what the app does.
+        i18n("Take notes easily"),
+        // The license this code is released under.
+        KAboutLicense::GPL,
+        // Copyright Statement.
+        i18n("© Felipe Kinoshita 2023"));
+    aboutData.addAuthor(i18nc("@info:credit", "Felipe Kinoshita"),
+                        i18nc("@info:credit", "Author"),
+                        QStringLiteral("kinofhek@gmail.com"),
+                        QStringLiteral("https://fhek.gitlab.io"));
     aboutData.setBugAddress("https://invent.kde.org/fhek/notae/-/issues/new");
     KAboutData::setApplicationData(aboutData);
     QGuiApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.notae")));

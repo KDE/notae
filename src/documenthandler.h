@@ -8,12 +8,12 @@
 #include <QDebug>
 #include <QFont>
 #include <QObject>
+#include <QQuickTextDocument>
 #include <QTextCursor>
 #include <QThread>
 #include <QTimer>
 #include <QUrl>
 #include <qstringliteral.h>
-#include <QQuickTextDocument>
 
 QT_BEGIN_NAMESPACE
 class QFileSystemWatcher;

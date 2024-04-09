@@ -10,8 +10,8 @@
 #include <QQmlFile>
 #include <QQmlFileSelector>
 #include <QQuickTextDocument>
-#include <QTextCharFormat>
 #include <QStringDecoder>
+#include <QTextCharFormat>
 #include <QTextDocument>
 #include <QUrl>
 
@@ -45,19 +45,19 @@ void FileLoader::loadFile(const QUrl &url)
                 Q_EMIT this->fileReady(QString::fromUtf8(array), url);
             }
         } else {
-          qWarning() << "Failed to open file: " << file.errorString();
+            qWarning() << "Failed to open file: " << file.errorString();
         }
     }
 }
 
 DocumentHandler::DocumentHandler(QObject *parent)
-: QObject(parent)
-, m_document(nullptr)
-, m_watcher(new QFileSystemWatcher(this))
-, m_cursorPosition(-1)
-, m_selectionStart(0)
-, m_selectionEnd(0)
-, m_highlighter(new KSyntaxHighlighting::SyntaxHighlighter(this))
+    : QObject(parent)
+    , m_document(nullptr)
+    , m_watcher(new QFileSystemWatcher(this))
+    , m_cursorPosition(-1)
+    , m_selectionStart(0)
+    , m_selectionEnd(0)
+    , m_highlighter(new KSyntaxHighlighting::SyntaxHighlighter(this))
 {
     ++m_instanceCount;
 
@@ -225,7 +225,8 @@ void DocumentHandler::setStyle()
 
     if (m_theme.isEmpty()) {
         const bool isDark = DocumentHandler::isDark(this->m_backgroundColor);
-        const auto style = DocumentHandler::m_repository->defaultTheme(isDark ? KSyntaxHighlighting::Repository::DarkTheme : KSyntaxHighlighting::Repository::LightTheme);
+        const auto style =
+            DocumentHandler::m_repository->defaultTheme(isDark ? KSyntaxHighlighting::Repository::DarkTheme : KSyntaxHighlighting::Repository::LightTheme);
         this->m_highlighter->setTheme(style);
     } else {
         qDebug() << "Applying theme << " << m_theme << DocumentHandler::m_repository->theme(m_theme).isValid();
@@ -240,8 +241,7 @@ void DocumentHandler::setStyle()
 void DocumentHandler::refreshAllBlocks()
 {
     if (textDocument()) {
-        for (QTextBlock it = textDocument()->begin(); it != textDocument()->end(); it = it.next())
-        {
+        for (QTextBlock it = textDocument()->begin(); it != textDocument()->end(); it = it.next()) {
             Q_EMIT this->textDocument()->documentLayout()->updateBlock(it);
         }
     }
@@ -310,8 +310,7 @@ int DocumentHandler::cursorPosition() const
 
 void DocumentHandler::setCursorPosition(int position)
 {
-    if(m_cursorPosition == position)
-    {
+    if (m_cursorPosition == position) {
         return;
     }
 
@@ -553,10 +552,8 @@ void DocumentHandler::setFileUrl(const QUrl &url)
 
 QVariantMap DocumentHandler::fileInfo() const
 {
-
     const QFileInfo file(m_fileUrl.toLocalFile());
-    if(file.exists())
-    {
+    if (file.exists()) {
         return QVariantMap();
     }
 
@@ -605,7 +602,7 @@ void DocumentHandler::saveAs(const QUrl &url)
     const bool isHtml = QFileInfo(filePath).suffix().contains(QLatin1String("htm"));
     QFile file(filePath);
     if (!file.open(QFile::WriteOnly | QFile::Truncate | (isHtml ? QFile::NotOpen : QFile::Text))) {
-        Q_EMIT error(i18nd("notae","Cannot save: ") + file.errorString());
+        Q_EMIT error(i18nd("notae", "Cannot save: ") + file.errorString());
 
         return;
     }
@@ -707,7 +704,7 @@ void DocumentHandler::mergeFormatOnWordOrSelection(const QTextCharFormat &format
     cursor.mergeCharFormat(format);
 }
 
-void DocumentHandler::find(const QString &query,const bool &forward)
+void DocumentHandler::find(const QString &query, const bool &forward)
 {
     qDebug() << "Asked to find" << query;
     QTextDocument *doc = textDocument();
@@ -733,7 +730,7 @@ void DocumentHandler::find(const QString &query,const bool &forward)
 
     QTextCursor start = this->textCursor();
 
-    if(query != m_searchQuery ) {
+    if (query != m_searchQuery) {
         start.movePosition(QTextCursor::Start, QTextCursor::MoveAnchor);
         m_searchQuery = query;
     }
@@ -742,9 +739,9 @@ void DocumentHandler::find(const QString &query,const bool &forward)
         QTextCursor found = doc->find(m_searchQuery, start, newFlags);
         if (found.isNull()) {
             if (!forward)
-                start.movePosition (QTextCursor::End, QTextCursor::MoveAnchor);
+                start.movePosition(QTextCursor::End, QTextCursor::MoveAnchor);
             else
-                start.movePosition (QTextCursor::Start, QTextCursor::MoveAnchor);
+                start.movePosition(QTextCursor::Start, QTextCursor::MoveAnchor);
 
             this->setCursorPosition(start.position());
 
@@ -762,14 +759,12 @@ void DocumentHandler::find(const QString &query,const bool &forward)
 
 void DocumentHandler::replace(const QString &query, const QString &value)
 {
-    if(value.isEmpty()) {
+    if (value.isEmpty()) {
         return;
     }
 
     if (this->textDocument()) {
-
-        if(m_searchQuery.isEmpty() || query != m_searchQuery)
-        {
+        if (m_searchQuery.isEmpty() || query != m_searchQuery) {
             find(query);
         }
 
@@ -793,7 +788,7 @@ void DocumentHandler::replaceAll(const QString &query, const QString &value)
     QTextCursor newCursor(doc);
     newCursor.movePosition(QTextCursor::Start, QTextCursor::MoveAnchor);
 
-    if(newCursor.isNull() || newCursor.atEnd()) {
+    if (newCursor.isNull() || newCursor.atEnd()) {
         return;
     }
 
@@ -815,18 +810,16 @@ void DocumentHandler::replaceAll(const QString &query, const QString &value)
             newCursor.beginEditBlock();
             newCursor.insertText(value);
             newCursor.endEditBlock();
-
         }
     }
 }
 
 bool DocumentHandler::isFoldable(const int &line) const
 {
-    if(!m_highlighter)
+    if (!m_highlighter)
         return false;
 
-    if(auto doc = this->textDocument())
-    {
+    if (auto doc = this->textDocument()) {
         return m_highlighter->startsFoldingRegion(doc->findBlockByLineNumber(line));
     }
 
@@ -835,11 +828,10 @@ bool DocumentHandler::isFoldable(const int &line) const
 
 bool DocumentHandler::isFolded(const int &line) const
 {
-    if(!m_highlighter)
+    if (!m_highlighter)
         return false;
 
-    if(auto doc = this->textDocument())
-    {
+    if (auto doc = this->textDocument()) {
         auto block = doc->findBlockByLineNumber(line);
 
         if (!block.isValid())
@@ -858,40 +850,34 @@ bool DocumentHandler::isFolded(const int &line) const
 
 void DocumentHandler::toggleFold(const int &line)
 {
-    if(!m_highlighter)
+    if (!m_highlighter)
         return;
 
-    if(auto doc = this->textDocument())
-    {
+    if (auto doc = this->textDocument()) {
         auto startBlock = doc->findBlockByLineNumber(line);
 
         // we also want to fold the last line of the region, therefore the ".next()"
-        const auto endBlock =
-        m_highlighter->findFoldingRegionEnd(startBlock).next();
+        const auto endBlock = m_highlighter->findFoldingRegionEnd(startBlock).next();
 
-        qDebug() << "Fold line"<< line << startBlock.position() << endBlock.position() << doc->blockCount();
+        qDebug() << "Fold line" << line << startBlock.position() << endBlock.position() << doc->blockCount();
         // fold
         auto block = startBlock.next();
-        while (block.isValid() && block != endBlock)
-        {
+        while (block.isValid() && block != endBlock) {
             block.setVisible(false);
             block.setLineCount(0);
             block = block.next();
         }
 
-
-        for (QTextBlock it = startBlock; it != endBlock; it = it.next())
-        {
+        for (QTextBlock it = startBlock; it != endBlock; it = it.next()) {
             Q_EMIT this->textDocument()->documentLayout()->updateBlock(it);
         }
 
         // redraw document
         //         doc->markContentsDirty(startBlock.position(), endBlock.position());
-        qDebug() << "Fold line"<< line << startBlock.position() << endBlock.position() << doc->blockCount();
+        qDebug() << "Fold line" << line << startBlock.position() << endBlock.position() << doc->blockCount();
 
         //         // update scrollbars
-        Q_EMIT doc->documentLayout()->documentSizeChanged(
-            doc->documentLayout()->documentSize());
+        Q_EMIT doc->documentLayout()->documentSizeChanged(doc->documentLayout()->documentSize());
     }
 }
 
@@ -921,12 +907,12 @@ int DocumentHandler::getCurrentLineIndex()
     return this->textDocument()->findBlock(m_cursorPosition).blockNumber();
 }
 
-int DocumentHandler::goToLine(const int& line)
+int DocumentHandler::goToLine(const int &line)
 {
     if (!this->textDocument())
         return this->cursorPosition();
     const auto block = this->textDocument()->findBlockByLineNumber(line);
-    return block.position() + block.length()-1;
+    return block.position() + block.length() - 1;
 }
 
 void DocumentHandler::setEnableSyntaxHighlighting(const bool &value)
