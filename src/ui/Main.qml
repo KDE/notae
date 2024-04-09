@@ -276,6 +276,14 @@ Kirigami.ApplicationWindow {
                             icon.name: "kdeapp"
                             onClicked: pageStack.layers.push(Qt.createComponent("org.kde.kirigamiaddons.formcard", "AboutKDE"))
                         }
+                        QQC2.MenuItem {
+                            action: Kirigami.Action {
+                                icon.name: "application-exit"
+                                text: i18nc("@action:inmenu", "Quit")
+                                shortcut: StandardKey.Quit
+                                onTriggered: Qt.quit()
+                            }
+                        }
                     }
 
                     QQC2.ToolTip.visible: hovered
