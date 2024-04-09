@@ -52,7 +52,6 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
 
     auto config = Config::self();
-    App application;
 
     qmlRegisterSingletonInstance("org.kde.notae.private", 1, 0, "Config", config);
 
@@ -72,7 +71,8 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
         auto view = qobject_cast<QQuickWindow *>(obj);
         if (view) {
             if (view->isVisible()) {
-                application.restoreWindowGeometry(view);
+                auto app = engine.singletonInstance<App *>("org.kde.notae", "App");
+                app->restoreWindowGeometry(view);
             }
             break;
         }
