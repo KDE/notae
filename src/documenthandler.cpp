@@ -11,18 +11,11 @@
 #include <QQmlFileSelector>
 #include <QQuickTextDocument>
 #include <QTextCharFormat>
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-#include <QTextCodec>
-#else
-#include <QStringConverter>
 #include <QStringDecoder>
-#endif
 #include <QTextDocument>
-#include <QTextDocumentWriter>
 #include <QUrl>
 
 #include <KLocalizedString>
-#include <KSyntaxHighlighting/Definition>
 #include <KSyntaxHighlighting/Repository>
 #include <KSyntaxHighlighting/SyntaxHighlighter>
 #include <KSyntaxHighlighting/Theme>
@@ -44,7 +37,6 @@ void FileLoader::loadFile(const QUrl &url)
         QFile file(url.toLocalFile());
         if (file.open(QFile::ReadOnly)) {
             const auto array = file.readAll();
-#if QT_VERSION > QT_VERSION_CHECK(6, 0, 0)
             auto encoding = QStringConverter::encodingForData(array);
             if (encoding.has_value()) {
                 Q_EMIT this->fileReady(QStringDecoder(*encoding).decode(array), url);
@@ -52,10 +44,6 @@ void FileLoader::loadFile(const QUrl &url)
                 // If it's unknown encoding, try to give it to the user anyway
                 Q_EMIT this->fileReady(QString::fromUtf8(array), url);
             }
-#else
-            QTextCodec *codec = QTextDocumentWriter(url.toLocalFile()).codec();
-            Q_EMIT this->fileReady(codec->toUnicode(array), url);
-#endif
         } else {
           qWarning() << "Failed to open file: " << file.errorString();
         }
