@@ -37,8 +37,8 @@ ecm_setup_version(${PROJECT_VERSION}
 
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets Qml QuickControls2 Svg)
 
-find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 CoreAddons Config I18n DBusAddons SyntaxHighlighting)
-find_package(KF6KirigamiAddons 0.6 REQUIRED)
+find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami CoreAddons Config I18n DBusAddons SyntaxHighlighting)
+find_package(KF6KirigamiAddons 1.1.0 REQUIRED)
 
 add_subdirectory(src)
 
