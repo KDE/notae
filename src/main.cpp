@@ -23,7 +23,6 @@ constexpr auto APPLICATION_ID = "org.kde.notae";
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
-    QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QApplication app(argc, argv);
     QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
 
