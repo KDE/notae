@@ -4,10 +4,21 @@
 add_executable(${CMAKE_PROJECT_NAME}
     main.cpp
     app.cpp
-    documenthandler.cpp
-    resources.qrc)
+    documenthandler.cpp)
+
+ecm_add_qml_module(${CMAKE_PROJECT_NAME}
+        URI org.kde.notae
+        VERSION 1.0
+        DEPENDENCIES
+        "QtQuick.Controls"
+        GENERATE_PLUGIN_SOURCE)
+qt_target_qml_sources(${CMAKE_PROJECT_NAME}
+        QML_FILES
+        ui/Main.qml
+        ui/TextEditor.qml)
 
 target_link_libraries(${CMAKE_PROJECT_NAME}
+    PRIVATE
     Qt::Core
     Qt::Gui
     Qt::Widgets

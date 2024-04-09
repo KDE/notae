@@ -6,15 +6,12 @@
 #include <QQmlApplicationEngine>
 #include <QQuickStyle>
 #include <QQuickWindow>
-#include <QtQml>
 #include <QUrl>
 
 #include <KAboutData>
 #include <KDBusService>
 #include <KLocalizedContext>
 #include <KLocalizedString>
-
-constexpr auto APPLICATION_ID = "org.kde.notae";
 
 #include "version-notae.h"
 #include "config.h"
@@ -54,13 +51,11 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     auto config = Config::self();
     App application;
 
-    qmlRegisterSingletonInstance(APPLICATION_ID, 1, 0, "Config", config);
-
-    qmlRegisterType<DocumentHandler>(APPLICATION_ID, 1, 0, "DocumentHandler");
+    qmlRegisterSingletonInstance("org.kde.notae.private", 1, 0, "Config", config);
 
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
     KLocalizedString::setApplicationDomain("notae");
-    engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
+    engine.loadFromModule(QStringLiteral("org.kde.notae"), QStringLiteral("Main"));
 
     if (engine.rootObjects().isEmpty()) {
         return -1;
