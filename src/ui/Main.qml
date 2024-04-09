@@ -86,14 +86,11 @@ Kirigami.ApplicationWindow {
         onAccepted: textEditor.document.saveAs(currentFile)
     }
 
-    // We want only one column
-    pageStack.defaultColumnWidth: root.width
-
     pageStack.initialPage: TextEditor {
         id: textEditor
 
-        // We have our own header
-        globalToolBarStyle: Kirigami.ApplicationHeaderStyle.None
+        // Use our own header on the main page
+        globalToolBarStyle: pageStack.layers.depth > 1 ? Kirigami.ApplicationHeaderStyle.ToolBar : Kirigami.ApplicationHeaderStyle.None
 
         header: Loader {
             active: true
@@ -272,12 +269,12 @@ Kirigami.ApplicationWindow {
                         QQC2.MenuItem {
                             text: i18nc("@action:inmenu", "About Notae")
                             icon.name: "org.kde.notae"
-                            onClicked: pageStack.push(Qt.createComponent("org.kde.kirigamiaddons.formcard", "AboutPage"))
+                            onClicked: pageStack.layers.push(Qt.createComponent("org.kde.kirigamiaddons.formcard", "AboutPage"))
                         }
                         QQC2.MenuItem {
                             text: i18nc("@action:inmenu", "About KDE")
                             icon.name: "kdeapp"
-                            onClicked: pageStack.push(Qt.createComponent("org.kde.kirigamiaddons.formcard", "AboutKDE"))
+                            onClicked: pageStack.layers.push(Qt.createComponent("org.kde.kirigamiaddons.formcard", "AboutKDE"))
                         }
                     }
 
