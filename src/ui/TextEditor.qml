@@ -9,10 +9,14 @@ import org.kde.kirigami as Kirigami
 
 import org.kde.notae
 
-QQC2.Page {
+Kirigami.ScrollablePage {
     id: control
 
     focus: true
+    topPadding: 0
+    bottomPadding: 0
+    leftPadding: 0
+    rightPadding: 0
 
     property alias text: body.text
     property alias body: body
@@ -40,55 +44,51 @@ QQC2.Page {
         }
     }
 
-    contentItem: Item {
+    QQC2.ScrollView {
+        id: _scrollView
+
+        anchors.fill: parent
+
         clip: false
 
-        QQC2.ScrollView {
-            id: _scrollView
+        Flickable {
+            id: _flickable
 
             anchors.fill: parent
 
             clip: false
 
-            Flickable {
-                id: _flickable
+            boundsBehavior: Flickable.StopAtBounds
+            boundsMovement: Flickable.StopAtBounds
 
-                anchors.fill: parent
+            QQC2.TextArea.flickable: QQC2.TextArea {
+                id: body
 
-                clip: false
+                text: document.text
+                textFormat: TextEdit.PlainText
 
-                boundsBehavior: Flickable.StopAtBounds
-                boundsMovement: Flickable.StopAtBounds
+                wrapMode: Text.Wrap
 
-                QQC2.TextArea.flickable: QQC2.TextArea {
-                    id: body
+                padding: Kirigami.Units.largeSpacing
 
-                    text: document.text
-                    textFormat: TextEdit.PlainText
+                background: Rectangle {
+                    Kirigami.Theme.colorSet: Kirigami.Theme.View
+                    Kirigami.Theme.inherit: false
+                    color: Kirigami.Theme.backgroundColor
 
-                    wrapMode: Text.Wrap
-
-                    padding: Kirigami.Units.largeSpacing
-
-                    background: Rectangle {
+                    Rectangle {
                         Kirigami.Theme.colorSet: Kirigami.Theme.View
                         Kirigami.Theme.inherit: false
-                        color: Kirigami.Theme.backgroundColor
+                        color: Qt.darker(Kirigami.Theme.backgroundColor, 1.03)
 
-                        Rectangle {
-                            Kirigami.Theme.colorSet: Kirigami.Theme.View
-                            Kirigami.Theme.inherit: false
-                            color: Qt.darker(Kirigami.Theme.backgroundColor, 1.03)
-
-                            visible: control.focus
-                            width: body.width
-                            height: body.cursorRectangle.height
-                            y: body.cursorRectangle.y
-                        }
+                        visible: control.focus
+                        width: body.width
+                        height: body.cursorRectangle.height
+                        y: body.cursorRectangle.y
                     }
-
-                    Component.onCompleted: body.forceActiveFocus()
                 }
+
+                Component.onCompleted: body.forceActiveFocus()
             }
         }
     }
