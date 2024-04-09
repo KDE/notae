@@ -267,9 +267,12 @@ Kirigami.ApplicationWindow {
                     QQC2.Menu {
                         id: applicationMenu
                         QQC2.MenuItem {
-                            text: i18nc("@action:inmenu", "About Notae")
-                            icon.name: "org.kde.notae"
-                            onClicked: pageStack.layers.push(Qt.createComponent("org.kde.kirigamiaddons.formcard", "AboutPage"))
+                            action: Kirigami.Action {
+                                text: i18nc("@action:inmenu", "About Notae")
+                                icon.name: "org.kde.notae"
+                                shortcut: StandardKey.HelpContents
+                                onTriggered: pageStack.layers.push(Qt.createComponent("org.kde.kirigamiaddons.formcard", "AboutPage"))
+                            }
                         }
                         QQC2.MenuItem {
                             text: i18nc("@action:inmenu", "About KDE")
