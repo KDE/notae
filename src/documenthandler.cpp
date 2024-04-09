@@ -48,11 +48,16 @@ void FileLoader::loadFile(const QUrl &url)
             auto encoding = QStringConverter::encodingForData(array);
             if (encoding.has_value()) {
                 Q_EMIT this->fileReady(QStringDecoder(*encoding).decode(array), url);
+            } else {
+                // If it's unknown encoding, try to give it to the user anyway
+                Q_EMIT this->fileReady(QString::fromUtf8(array), url);
             }
 #else
             QTextCodec *codec = QTextDocumentWriter(url.toLocalFile()).codec();
             Q_EMIT this->fileReady(codec->toUnicode(array), url);
 #endif
+        } else {
+          qWarning() << "Failed to open file: " << file.errorString();
         }
     }
 }
