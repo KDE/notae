@@ -3,7 +3,23 @@
 
 [Desktop Entry]
 Name=Notae
+Name[ca]=Notae
+Name[ca@valencia]=Notae
+Name[es]=Notae
+Name[nl]=Notae
+Name[sl]=Notae
+Name[tr]=Notae
+Name[uk]=Notae
+Name[x-test]=xxNotaexx
 Comment=Take notes easily
+Comment[ca]=Preneu notes fàcilment
+Comment[ca@valencia]=Preneu notes amb facilitat
+Comment[es]=Tomar notas con facilidad
+Comment[nl]=Gemakkelijk notities opnemen
+Comment[sl]=Z lahkoto si delajte zapiske
+Comment[tr]=Kolay Not Alma Uygulaması
+Comment[uk]=Занотовуйте без проблем
+Comment[x-test]=xxTake notes easilyxx
 Exec=notae
 Icon=org.kde.notae
 Type=Application
