@@ -1,0 +1,180 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the notae package.
+#
+# SPDX-FileCopyrightText: 2024 Matjaž Jeran <matjaz.jeran@amis.net>
+msgid ""
+msgstr ""
+"Project-Id-Version: notae\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-10-23 00:44+0000\n"
+"PO-Revision-Date: 2024-10-23 06:53+0200\n"
+"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 24.08.2\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Matjaž Jeran"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "matjaz.jeran@amis.net"
+
+#: src/documenthandler.cpp:605
+#, kde-format
+msgid "Cannot save: "
+msgstr "Ni mogoče shraniti: "
+
+#: src/main.cpp:38
+#, kde-format
+msgctxt "@title"
+msgid "Notae"
+msgstr "Notae"
+
+#: src/main.cpp:42
+#, kde-format
+msgid "Take notes easily"
+msgstr "Z lahkoto si delajte zapiske"
+
+#: src/main.cpp:46
+#, kde-format
+msgid "© Felipe Kinoshita 2023"
+msgstr "© Felipe Kinoshita 2023"
+
+#: src/main.cpp:47
+#, kde-format
+msgctxt "@info:credit"
+msgid "Felipe Kinoshita"
+msgstr "Felipe Kinoshita"
+
+#: src/main.cpp:48
+#, kde-format
+msgctxt "@info:credit"
+msgid "Author"
+msgstr "Avtor"
+
+#: src/ui/Main.qml:17
+#, kde-format
+msgid "Notae"
+msgstr "Notae"
+
+#: src/ui/Main.qml:103
+#, kde-format
+msgid "New"
+msgstr "Nov"
+
+#: src/ui/Main.qml:114
+#, kde-format
+msgid "Create new document (Ctrl+N)"
+msgstr "Ustvari nov dokument (Ctrl+N)"
+
+#: src/ui/Main.qml:123
+#, kde-format
+msgid "Open…"
+msgstr "Odpri…"
+
+#: src/ui/Main.qml:130
+#, kde-format
+msgid "Open an existing note (Ctrl+O)"
+msgstr "Odpri obstoječ zapisek (Ctrl+O)"
+
+#: src/ui/Main.qml:139
+#, kde-format
+msgid "Save As…"
+msgstr "Shrani kot…"
+
+#: src/ui/Main.qml:139
+#, kde-format
+msgid "Save"
+msgstr "Shrani"
+
+#: src/ui/Main.qml:153
+#, kde-format
+msgid "Save new document (Ctrl+Shift+S)"
+msgstr "Shrani novi dokument (Ctrl+Shift+S)"
+
+#: src/ui/Main.qml:153
+#, kde-format
+msgid "Save document (Ctrl+S)"
+msgstr "Shrani dokument (Ctrl+S)"
+
+#: src/ui/Main.qml:167
+#, kde-format
+msgid "Cut"
+msgstr "Izreži"
+
+#: src/ui/Main.qml:175
+#, kde-format
+msgid "Cut selection to clipboard (Ctrl+X)"
+msgstr "Izreži izbiro na odložišče (Ctrl+X)"
+
+#: src/ui/Main.qml:184
+#, kde-format
+msgid "Copy"
+msgstr "Kopiraj"
+
+#: src/ui/Main.qml:192
+#, kde-format
+msgid "Copy selection to clipboard (Ctrl+C)"
+msgstr "Kopiraj izbiro na odložišče (Ctrl+C)"
+
+#: src/ui/Main.qml:201
+#, kde-format
+msgid "Paste"
+msgstr "Prilepi"
+
+#: src/ui/Main.qml:209
+#, kde-format
+msgid "Paste clipboard content (Ctrl+V)"
+msgstr "Prilepi vsebino odložišča (Ctrl+V)"
+
+#: src/ui/Main.qml:221
+#, kde-format
+msgid "Undo"
+msgstr "Prekliči"
+
+#: src/ui/Main.qml:229
+#, kde-format
+msgid "Undo last action (Ctrl+Z)"
+msgstr "Prekliči zadnje dejanje (Ctrl+Z)"
+
+#: src/ui/Main.qml:238
+#, kde-format
+msgid "Redo"
+msgstr "Uveljavi"
+
+#: src/ui/Main.qml:246
+#, kde-format
+msgid "Redo last undone action (Ctrl+Shift+Z)"
+msgstr "Uveljavi zadnjo preklicano dejanje (Ctrl+Shift+Z)"
+
+#: src/ui/Main.qml:262
+#, kde-format
+msgid "Menu"
+msgstr "Meni"
+
+#: src/ui/Main.qml:271
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "About Notae"
+msgstr "O Notae"
+
+#: src/ui/Main.qml:278
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "About KDE"
+msgstr "O KDE"
+
+#: src/ui/Main.qml:285
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Quit"
+msgstr "Zapusti"
