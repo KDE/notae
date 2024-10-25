@@ -9,20 +9,24 @@
   <name xml:lang="ca">Notae</name>
   <name xml:lang="ca-valencia">Notae</name>
   <name xml:lang="es">Notae</name>
+  <name xml:lang="fr">Notae</name>
   <name xml:lang="nl">Notae</name>
   <name xml:lang="sl">Notae</name>
   <name xml:lang="tr">Notae</name>
   <name xml:lang="uk">Notae</name>
   <name xml:lang="x-test">xxNotaexx</name>
+  <name xml:lang="zh-TW">Notae</name>
   <summary>Take notes easily</summary>
   <summary xml:lang="ca">Preneu notes fàcilment</summary>
   <summary xml:lang="ca-valencia">Preneu notes amb facilitat</summary>
   <summary xml:lang="es">Tomar notas con facilidad</summary>
+  <summary xml:lang="fr">Prenez des notes facilement</summary>
   <summary xml:lang="nl">Gemakkelijk notities maken</summary>
   <summary xml:lang="sl">Z lahkoto si delajte zapiske</summary>
   <summary xml:lang="tr">Kolay Not Alma Uygulaması</summary>
   <summary xml:lang="uk">Занотовуйте без проблем</summary>
   <summary xml:lang="x-test">xxTake notes easilyxx</summary>
+  <summary xml:lang="zh-TW">輕易作筆記</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
   <provides>
@@ -33,11 +37,13 @@
     <p xml:lang="ca">El Notae permet centrar-vos en allò que és important.</p>
     <p xml:lang="ca-valencia">Notae permet centrar-vos en allò que és important.</p>
     <p xml:lang="es">Notae le permite centrarse en lo que es importante.</p>
+    <p xml:lang="fr">Notae vous permet de vous concentrer sur ce qui est important.</p>
     <p xml:lang="nl">Notae laat u focussen op wat belangrijk is.</p>
     <p xml:lang="sl">Notae vam omogoča, da se osredotočite na tisto, kar je pomembno.</p>
     <p xml:lang="tr">Notae, sizin önemli olan şeylere odaklanmanıza olanak tanır.</p>
     <p xml:lang="uk">Notae надає вам змогу зосередитися на тому, що важливе.</p>
     <p xml:lang="x-test">xxNotae lets you focus on what's important.xx</p>
+    <p xml:lang="zh-TW">Notae 讓您能夠專注在重要的事情上。</p>
   </description>
   <url type="homepage">https://invent.kde.org/fhek/notae</url>
   <url type="bugtracker">https://invent.kde.org/fhek/notae/-/issues</url>
@@ -45,11 +51,13 @@
   <developer_name xml:lang="ca">La comunitat KDE, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="ca-valencia">La comunitat KDE, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="es">La Comunidad KDE, Felipe Kinoshita</developer_name>
+  <developer_name xml:lang="fr">Communauté de KDE, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="nl">KDE gemeenschap, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="sl">Skupnost KDE, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="tr">KDE Topluluğu, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="uk">Спільнота KDE, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="x-test">xxKDE Community, Felipe Kinoshitaxx</developer_name>
+  <developer_name xml:lang="zh-TW">KDE 社群、Felipe Kinoshita</developer_name>
   <recommends>
     <control>keyboard</control>
   </recommends>
