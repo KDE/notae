@@ -1,36 +1,36 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the notae package.
 #
-# SPDX-FileCopyrightText: 2024 Freek de Kruijf <freekdekruijf@kde.nl>
+# SPDX-FileCopyrightText: 2024 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: notae\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-10-23 00:44+0000\n"
-"PO-Revision-Date: 2024-10-23 11:32+0200\n"
-"Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
-"Language-Team: \n"
-"Language: nl\n"
+"PO-Revision-Date: 2024-10-24 19:13+0900\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 24.08.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Freek de Kruijf - 2024"
+msgstr "Kisaragi Hiu"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "freekdekruijf@kde.nl"
+msgstr "mail@kisaragi-hiu.com"
 
 #: src/documenthandler.cpp:605
 #, kde-format
 msgid "Cannot save: "
-msgstr "Kan niet opslaan: "
+msgstr "無法儲存："
 
 #: src/main.cpp:38
 #, kde-format
@@ -41,7 +41,7 @@ msgstr "Notae"
 #: src/main.cpp:42
 #, kde-format
 msgid "Take notes easily"
-msgstr "Gemakkelijk notities opnemen"
+msgstr "輕易作筆記"
 
 #: src/main.cpp:46
 #, kde-format
@@ -58,7 +58,7 @@ msgstr "Felipe Kinoshita"
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
-msgstr "Auteur"
+msgstr "作者"
 
 #: src/ui/Main.qml:17
 #, kde-format
@@ -68,112 +68,112 @@ msgstr "Notae"
 #: src/ui/Main.qml:103
 #, kde-format
 msgid "New"
-msgstr "Nieuw"
+msgstr "新增"
 
 #: src/ui/Main.qml:114
 #, kde-format
 msgid "Create new document (Ctrl+N)"
-msgstr "Nieuw document aanmaken (Ctrl+N)"
+msgstr "建立新文件 (Ctrl+N)"
 
 #: src/ui/Main.qml:123
 #, kde-format
 msgid "Open…"
-msgstr "Openen…"
+msgstr "開啟…"
 
 #: src/ui/Main.qml:130
 #, kde-format
 msgid "Open an existing note (Ctrl+O)"
-msgstr "Een bestaande notitie openen (Ctrl+O)"
+msgstr "開啟現存的筆記 (Ctrl+O)"
 
 #: src/ui/Main.qml:139
 #, kde-format
 msgid "Save As…"
-msgstr "Opslaan als…"
+msgstr "另存為…"
 
 #: src/ui/Main.qml:139
 #, kde-format
 msgid "Save"
-msgstr "Opslaan"
+msgstr "儲存"
 
 #: src/ui/Main.qml:153
 #, kde-format
 msgid "Save new document (Ctrl+Shift+S)"
-msgstr "Nieuw document opslaan (Ctrl+Shift+S)"
+msgstr "儲存成新文件 (Ctrl+Shift+S)"
 
 #: src/ui/Main.qml:153
 #, kde-format
 msgid "Save document (Ctrl+S)"
-msgstr "Document opslaan (Ctrl+S)"
+msgstr "儲存文件 (Ctrl+S)"
 
 #: src/ui/Main.qml:167
 #, kde-format
 msgid "Cut"
-msgstr "Knippen"
+msgstr "剪下"
 
 #: src/ui/Main.qml:175
 #, kde-format
 msgid "Cut selection to clipboard (Ctrl+X)"
-msgstr "Selectie knippen naar klembord (Ctrl+X)"
+msgstr "將選取內容剪下到剪貼簿 (Ctrl+X)"
 
 #: src/ui/Main.qml:184
 #, kde-format
 msgid "Copy"
-msgstr "Kopiëren"
+msgstr "複製"
 
 #: src/ui/Main.qml:192
 #, kde-format
 msgid "Copy selection to clipboard (Ctrl+C)"
-msgstr "Selectie kopiëren naar klembord (Ctrl+C)"
+msgstr "將選取內容複製到剪貼簿 (Ctrl+C)"
 
 #: src/ui/Main.qml:201
 #, kde-format
 msgid "Paste"
-msgstr "Plakken"
+msgstr "貼上"
 
 #: src/ui/Main.qml:209
 #, kde-format
 msgid "Paste clipboard content (Ctrl+V)"
-msgstr "Inhoud van klembord plakken (Ctrl+V)"
+msgstr "貼上剪貼簿內容 (Ctrl+V)"
 
 #: src/ui/Main.qml:221
 #, kde-format
 msgid "Undo"
-msgstr "Ongedaan maken"
+msgstr "復原"
 
 #: src/ui/Main.qml:229
 #, kde-format
 msgid "Undo last action (Ctrl+Z)"
-msgstr "Laatste actie ongedaan maken (Ctrl+Z)"
+msgstr "復原上一次動作 (Ctrl+Z)"
 
 #: src/ui/Main.qml:238
 #, kde-format
 msgid "Redo"
-msgstr "Opnieuw"
+msgstr "重做"
 
 #: src/ui/Main.qml:246
 #, kde-format
 msgid "Redo last undone action (Ctrl+Shift+Z)"
-msgstr "Laatste ongedaan gemaakte actie opnieuw doen (Ctrl+Shift+Z)"
+msgstr "重做上次復原的操作 (Ctrl+Shift+Z)"
 
 #: src/ui/Main.qml:262
 #, kde-format
 msgid "Menu"
-msgstr "Menu"
+msgstr "選單"
 
 #: src/ui/Main.qml:271
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "About Notae"
-msgstr "Info over Notae"
+msgstr "關於 Notae"
 
 #: src/ui/Main.qml:278
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "About KDE"
-msgstr "Info over KDE"
+msgstr "關於 KDE"
 
 #: src/ui/Main.qml:285
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit"
-msgstr "Afsluiten"
+msgstr "離開"
