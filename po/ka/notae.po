@@ -1,37 +1,37 @@
-# Copyright (C) 2024 This file is copyright:
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the notae package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# SPDX-FileCopyrightText: 2024 Yaron Shahrabani <sh.yaron@gmail.com>
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: notae\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-10-23 00:44+0000\n"
-"PO-Revision-Date: 2024-10-25 22:15+0300\n"
-"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: צוות התרגום של KDE ישראל\n"
-"Language: he\n"
+"PO-Revision-Date: 2024-10-26 04:29+0200\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
+"Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
-"n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 24.05.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "צוות התרגום של KDE ישראל"
+msgstr "Temuri Doghonadze"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "kde-l10n-he@kde.org"
+msgstr "Temuri.doghonadze@gmail.com"
 
 #: src/documenthandler.cpp:605
 #, kde-format
 msgid "Cannot save: "
-msgstr "לא ניתן לשמור:"
+msgstr "შენახვის შეცდომა: "
 
 #: src/main.cpp:38
 #, kde-format
@@ -42,24 +42,24 @@ msgstr "Notae"
 #: src/main.cpp:42
 #, kde-format
 msgid "Take notes easily"
-msgstr "כתיבת פתקיות בקלות"
+msgstr "ჩაინიშნეთ იოლად"
 
 #: src/main.cpp:46
 #, kde-format
 msgid "© Felipe Kinoshita 2023"
-msgstr "© פליפה קינושיטה 2023"
+msgstr "© ფელიპე კინოშიტა 2023"
 
 #: src/main.cpp:47
 #, kde-format
 msgctxt "@info:credit"
 msgid "Felipe Kinoshita"
-msgstr "פליפה קינושיטה"
+msgstr "Felipe Kinoshita"
 
 #: src/main.cpp:48
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
-msgstr "יוצר"
+msgstr "ავტორი"
 
 #: src/ui/Main.qml:17
 #, kde-format
@@ -69,112 +69,112 @@ msgstr "Notae"
 #: src/ui/Main.qml:103
 #, kde-format
 msgid "New"
-msgstr "חדש"
+msgstr "ახალი"
 
 #: src/ui/Main.qml:114
 #, kde-format
 msgid "Create new document (Ctrl+N)"
-msgstr "יצירת מסמך חדש (Ctrl+N)"
+msgstr "ახალი დოკუმენტის შექმნა (Ctrl+N)"
 
 #: src/ui/Main.qml:123
 #, kde-format
 msgid "Open…"
-msgstr "פתיחה…"
+msgstr "გახსნა…"
 
 #: src/ui/Main.qml:130
 #, kde-format
 msgid "Open an existing note (Ctrl+O)"
-msgstr "פתיחת פתקית קיימת (Ctrl+O)"
+msgstr "არსებული შენიშვნის გახსნა (Ctrl+O)"
 
 #: src/ui/Main.qml:139
 #, kde-format
 msgid "Save As…"
-msgstr "שמירה בשם…"
+msgstr "შენახვა, როგორც…"
 
 #: src/ui/Main.qml:139
 #, kde-format
 msgid "Save"
-msgstr "שמירה"
+msgstr "შენახვა"
 
 #: src/ui/Main.qml:153
 #, kde-format
 msgid "Save new document (Ctrl+Shift+S)"
-msgstr "שמירת מסמך חדש (Ctrl+Shift+S)"
+msgstr "ახალი დოკუმენტის შენახვა (Ctrl+Shift+S)"
 
 #: src/ui/Main.qml:153
 #, kde-format
 msgid "Save document (Ctrl+S)"
-msgstr "שמירת מסמך (Ctrl+S)"
+msgstr "დოკუმენტის შენახვა (Ctrl+S)"
 
 #: src/ui/Main.qml:167
 #, kde-format
 msgid "Cut"
-msgstr "גזירה"
+msgstr "ამოჭრა"
 
 #: src/ui/Main.qml:175
 #, kde-format
 msgid "Cut selection to clipboard (Ctrl+X)"
-msgstr "גזירת הבחירה ללוח הגזירים (Ctrl+X)"
+msgstr "მონიშნულის ბუფერში ამოჭრა (Ctrl+X)"
 
 #: src/ui/Main.qml:184
 #, kde-format
 msgid "Copy"
-msgstr "העתקה"
+msgstr "კოპირება"
 
 #: src/ui/Main.qml:192
 #, kde-format
 msgid "Copy selection to clipboard (Ctrl+C)"
-msgstr "העתקת הבחירה ללוח הגזירים (Ctrl+C)"
+msgstr "მონიშნულის კოპირება ბუფერში (Ctrl+C)"
 
 #: src/ui/Main.qml:201
 #, kde-format
 msgid "Paste"
-msgstr "הדבקה"
+msgstr "ჩასმა"
 
 #: src/ui/Main.qml:209
 #, kde-format
 msgid "Paste clipboard content (Ctrl+V)"
-msgstr "הדבקת תוכן לוח הגזירים (Ctrl+V)"
+msgstr "ბუფერის შინაარსის ჩასმა (Ctrl+V)"
 
 #: src/ui/Main.qml:221
 #, kde-format
 msgid "Undo"
-msgstr "הסגה"
+msgstr "გაუქმება"
 
 #: src/ui/Main.qml:229
 #, kde-format
 msgid "Undo last action (Ctrl+Z)"
-msgstr "הסגת הפעולה האחרונה (Ctrl+Z)"
+msgstr "ბოლო მოქმედების გაუქმება (Ctrl+Z)"
 
 #: src/ui/Main.qml:238
 #, kde-format
 msgid "Redo"
-msgstr "ביצוע מחדש"
+msgstr "გამეორება"
 
 #: src/ui/Main.qml:246
 #, kde-format
 msgid "Redo last undone action (Ctrl+Shift+Z)"
-msgstr "ביצוע הפעולה האחרונה מחדש (Ctrl+Shift+Z)"
+msgstr "ბოლო გაუქმებული ქმედების გამეორება (Ctrl+Shift+Z)"
 
 #: src/ui/Main.qml:262
 #, kde-format
 msgid "Menu"
-msgstr "תפריט"
+msgstr "მენიუ"
 
 #: src/ui/Main.qml:271
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "About Notae"
-msgstr "על Notae"
+msgstr "Notae-ის შესახებ"
 
 #: src/ui/Main.qml:278
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "About KDE"
-msgstr "על KDE"
+msgstr "KDE-ის შესახებ"
 
 #: src/ui/Main.qml:285
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit"
-msgstr "יציאה"
+msgstr "გასვლა"
