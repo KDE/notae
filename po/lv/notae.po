@@ -1,0 +1,180 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the notae package.
+#
+# SPDX-FileCopyrightText: 2024 Toms Trasuns <toms.trasuns@posteo.net>
+msgid ""
+msgstr ""
+"Project-Id-Version: notae\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-10-23 00:44+0000\n"
+"PO-Revision-Date: 2024-11-07 16:12+0200\n"
+"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
+"Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Generator: Lokalize 24.08.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Toms Trasūns"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "toms.trasuns@posteo.net"
+
+#: src/documenthandler.cpp:605
+#, kde-format
+msgid "Cannot save: "
+msgstr "Nevar saglabāt: "
+
+#: src/main.cpp:38
+#, kde-format
+msgctxt "@title"
+msgid "Notae"
+msgstr "Notae"
+
+#: src/main.cpp:42
+#, kde-format
+msgid "Take notes easily"
+msgstr "Vienkārša piezīmju pierakstīšana"
+
+#: src/main.cpp:46
+#, kde-format
+msgid "© Felipe Kinoshita 2023"
+msgstr "© Felipe Kinoshita 2023"
+
+#: src/main.cpp:47
+#, kde-format
+msgctxt "@info:credit"
+msgid "Felipe Kinoshita"
+msgstr "Felipe Kinoshita"
+
+#: src/main.cpp:48
+#, kde-format
+msgctxt "@info:credit"
+msgid "Author"
+msgstr "Autors"
+
+#: src/ui/Main.qml:17
+#, kde-format
+msgid "Notae"
+msgstr "Notae"
+
+#: src/ui/Main.qml:103
+#, kde-format
+msgid "New"
+msgstr "Jauns"
+
+#: src/ui/Main.qml:114
+#, kde-format
+msgid "Create new document (Ctrl+N)"
+msgstr "Izveidot jaunu dokumentu („Ctrl+N“)"
+
+#: src/ui/Main.qml:123
+#, kde-format
+msgid "Open…"
+msgstr "Atvērt…"
+
+#: src/ui/Main.qml:130
+#, kde-format
+msgid "Open an existing note (Ctrl+O)"
+msgstr "Atvērt pastāvošu piezīmi („Ctrl+O“)"
+
+#: src/ui/Main.qml:139
+#, kde-format
+msgid "Save As…"
+msgstr "Saglabāt kā…"
+
+#: src/ui/Main.qml:139
+#, kde-format
+msgid "Save"
+msgstr "Saglabāt"
+
+#: src/ui/Main.qml:153
+#, kde-format
+msgid "Save new document (Ctrl+Shift+S)"
+msgstr "Saglabāt jaunu dokumentu („Ctrl+Shift+S“)"
+
+#: src/ui/Main.qml:153
+#, kde-format
+msgid "Save document (Ctrl+S)"
+msgstr "Saglabāt dokumentu („Ctrl+S“)"
+
+#: src/ui/Main.qml:167
+#, kde-format
+msgid "Cut"
+msgstr "Izgriezt"
+
+#: src/ui/Main.qml:175
+#, kde-format
+msgid "Cut selection to clipboard (Ctrl+X)"
+msgstr "Izgriezt atlasīto uz starpliktuvi („Ctrl+X“)"
+
+#: src/ui/Main.qml:184
+#, kde-format
+msgid "Copy"
+msgstr "Kopēt"
+
+#: src/ui/Main.qml:192
+#, kde-format
+msgid "Copy selection to clipboard (Ctrl+C)"
+msgstr "Kopēt atlasīto uz starpliktuvi („Ctrl+C“)"
+
+#: src/ui/Main.qml:201
+#, kde-format
+msgid "Paste"
+msgstr "Ielīmēt"
+
+#: src/ui/Main.qml:209
+#, kde-format
+msgid "Paste clipboard content (Ctrl+V)"
+msgstr "Ielīmēt starpliktuves saturu („Ctrl+V“)"
+
+#: src/ui/Main.qml:221
+#, kde-format
+msgid "Undo"
+msgstr "Atsaukt"
+
+#: src/ui/Main.qml:229
+#, kde-format
+msgid "Undo last action (Ctrl+Z)"
+msgstr "Atsaukt pēdējo darbību („Ctrl+Z“)"
+
+#: src/ui/Main.qml:238
+#, kde-format
+msgid "Redo"
+msgstr "Atatsaukt"
+
+#: src/ui/Main.qml:246
+#, kde-format
+msgid "Redo last undone action (Ctrl+Shift+Z)"
+msgstr "Atsaukt pēdējo atsaukto darbību („Ctrl+Shift+Z“)"
+
+#: src/ui/Main.qml:262
+#, kde-format
+msgid "Menu"
+msgstr "Izvēlne"
+
+#: src/ui/Main.qml:271
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "About Notae"
+msgstr "Par „Notae“"
+
+#: src/ui/Main.qml:278
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "About KDE"
+msgstr "Par KDE"
+
+#: src/ui/Main.qml:285
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Quit"
+msgstr "Iziet"
