@@ -1,0 +1,179 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the notae package.
+#
+# SPDX-FileCopyrightText: 2024 Adrián Chaves (Gallaecio)
+msgid ""
+msgstr ""
+"Project-Id-Version: notae\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-10-23 00:44+0000\n"
+"PO-Revision-Date: 2024-11-10 13:16+0100\n"
+"Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
+"Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 24.08.3\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Adrián Chaves (Gallaecio)"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "adrian@chaves.io"
+
+#: src/documenthandler.cpp:605
+#, kde-format
+msgid "Cannot save: "
+msgstr "Non é posíbel gardar: "
+
+#: src/main.cpp:38
+#, kde-format
+msgctxt "@title"
+msgid "Notae"
+msgstr "Notæ"
+
+#: src/main.cpp:42
+#, kde-format
+msgid "Take notes easily"
+msgstr "Tome notas facilmente"
+
+#: src/main.cpp:46
+#, kde-format
+msgid "© Felipe Kinoshita 2023"
+msgstr "© Felipe Kinoshita 2023"
+
+#: src/main.cpp:47
+#, kde-format
+msgctxt "@info:credit"
+msgid "Felipe Kinoshita"
+msgstr "Felipe Kinoshita"
+
+#: src/main.cpp:48
+#, kde-format
+msgctxt "@info:credit"
+msgid "Author"
+msgstr "Autoría"
+
+#: src/ui/Main.qml:17
+#, kde-format
+msgid "Notae"
+msgstr "Notæ"
+
+#: src/ui/Main.qml:103
+#, kde-format
+msgid "New"
+msgstr "Nova"
+
+#: src/ui/Main.qml:114
+#, kde-format
+msgid "Create new document (Ctrl+N)"
+msgstr "Crear un novo documento (Ctrl+N)"
+
+#: src/ui/Main.qml:123
+#, kde-format
+msgid "Open…"
+msgstr "Abrir…"
+
+#: src/ui/Main.qml:130
+#, kde-format
+msgid "Open an existing note (Ctrl+O)"
+msgstr "Abrir unha nota existente (Ctrl+O)"
+
+#: src/ui/Main.qml:139
+#, kde-format
+msgid "Save As…"
+msgstr "Gardar como…"
+
+#: src/ui/Main.qml:139
+#, kde-format
+msgid "Save"
+msgstr "Gardar"
+
+#: src/ui/Main.qml:153
+#, kde-format
+msgid "Save new document (Ctrl+Shift+S)"
+msgstr "Gardar un novo documento (Ctrl+Maiús+S)"
+
+#: src/ui/Main.qml:153
+#, kde-format
+msgid "Save document (Ctrl+S)"
+msgstr "Gardar o documento (Ctrl+S)"
+
+#: src/ui/Main.qml:167
+#, kde-format
+msgid "Cut"
+msgstr "Cortar"
+
+#: src/ui/Main.qml:175
+#, kde-format
+msgid "Cut selection to clipboard (Ctrl+X)"
+msgstr "Cortar a selección no portapapeis (Ctrl+X)"
+
+#: src/ui/Main.qml:184
+#, kde-format
+msgid "Copy"
+msgstr "Copiar"
+
+#: src/ui/Main.qml:192
+#, kde-format
+msgid "Copy selection to clipboard (Ctrl+C)"
+msgstr "Copiar a selección no portapapeis (Ctrl+C)"
+
+#: src/ui/Main.qml:201
+#, kde-format
+msgid "Paste"
+msgstr "Pegar"
+
+#: src/ui/Main.qml:209
+#, kde-format
+msgid "Paste clipboard content (Ctrl+V)"
+msgstr "Pegar o contido do portapapeis (Ctrl+V)"
+
+#: src/ui/Main.qml:221
+#, kde-format
+msgid "Undo"
+msgstr "Desfacer"
+
+#: src/ui/Main.qml:229
+#, kde-format
+msgid "Undo last action (Ctrl+Z)"
+msgstr "Desfacer a última acción (Ctrl+Z)"
+
+#: src/ui/Main.qml:238
+#, kde-format
+msgid "Redo"
+msgstr "Refacer"
+
+#: src/ui/Main.qml:246
+#, kde-format
+msgid "Redo last undone action (Ctrl+Shift+Z)"
+msgstr "Refacer a última acción desfeita (Ctrl+Maiús+Z)"
+
+#: src/ui/Main.qml:262
+#, kde-format
+msgid "Menu"
+msgstr "Menú"
+
+#: src/ui/Main.qml:271
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "About Notae"
+msgstr "Sobre Notæ"
+
+#: src/ui/Main.qml:278
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "About KDE"
+msgstr "Sobre KDE"
+
+#: src/ui/Main.qml:285
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Quit"
+msgstr "Saír"
