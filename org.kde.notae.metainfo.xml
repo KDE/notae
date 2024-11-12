@@ -20,6 +20,7 @@
   <name xml:lang="lv">Notae</name>
   <name xml:lang="nl">Notae</name>
   <name xml:lang="pl">Notae</name>
+  <name xml:lang="sk">Notae</name>
   <name xml:lang="sl">Notae</name>
   <name xml:lang="tr">Notae</name>
   <name xml:lang="uk">Notae</name>
@@ -40,6 +41,7 @@
   <summary xml:lang="lv">Vienkārša piezīmju pierakstīšana</summary>
   <summary xml:lang="nl">Gemakkelijk notities maken</summary>
   <summary xml:lang="pl">Rób notatki z łatwością</summary>
+  <summary xml:lang="sk">Robte poznámky ľahko</summary>
   <summary xml:lang="sl">Z lahkoto si delajte zapiske</summary>
   <summary xml:lang="tr">Kolay Not Alma Uygulaması</summary>
   <summary xml:lang="uk">Занотовуйте без проблем</summary>
@@ -89,6 +91,7 @@
   <developer_name xml:lang="lv">KDE kopiena, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="nl">KDE gemeenschap, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="pl">Społeczność KDE, Felipe Kinoshita</developer_name>
+  <developer_name xml:lang="sk">KDE komunita, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="sl">Skupnost KDE, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="tr">KDE Topluluğu, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="uk">Спільнота KDE, Felipe Kinoshita</developer_name>
