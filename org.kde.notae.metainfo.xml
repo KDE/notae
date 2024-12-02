@@ -11,6 +11,7 @@
   <name xml:lang="en-GB">Notae</name>
   <name xml:lang="es">Notae</name>
   <name xml:lang="eu">Notae</name>
+  <name xml:lang="fi">Notae</name>
   <name xml:lang="fr">Notae</name>
   <name xml:lang="gl">Notæ</name>
   <name xml:lang="he">Notae</name>
@@ -34,6 +35,7 @@
   <summary xml:lang="en-GB">Take notes easily</summary>
   <summary xml:lang="es">Tomar notas con facilidad</summary>
   <summary xml:lang="eu">Oharrak erraz hartzea</summary>
+  <summary xml:lang="fi">Tee helposti muistiinpanoja</summary>
   <summary xml:lang="fr">Prenez des notes facilement</summary>
   <summary xml:lang="gl">Tome notas facilmente</summary>
   <summary xml:lang="he">כתיבת פתקיות בקלות</summary>
@@ -63,6 +65,7 @@
     <p xml:lang="en-GB">Notae lets you focus on what's important.</p>
     <p xml:lang="es">Notae le permite centrarse en lo que es importante.</p>
     <p xml:lang="eu">Notae-k arreta inporta duen horretan fokuratzen uzten dizu.</p>
+    <p xml:lang="fi">Notaella keskityt siihen, mikä on tärkeää.</p>
     <p xml:lang="fr">Notae vous permet de vous concentrer sur ce qui est important.</p>
     <p xml:lang="gl">Notæ permítelle centrarse no importante.</p>
     <p xml:lang="he">Notae מאפשרת לך להתמקד במה שחשוב.</p>
@@ -88,6 +91,7 @@
   <developer_name xml:lang="en-GB">KDE Community, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="es">La Comunidad KDE, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="eu">KDE Komunitatea, Felipe Kinoshita</developer_name>
+  <developer_name xml:lang="fi">KDE-yhteisö, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="fr">Communauté de KDE, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="gl">Comunidade KDE, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="he">קהילת KDE, פליפה קינושיטה</developer_name>
