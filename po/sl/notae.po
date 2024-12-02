@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: notae\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-23 00:44+0000\n"
+"POT-Creation-Date: 2024-12-02 00:46+0000\n"
 "PO-Revision-Date: 2024-10-23 06:53+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -66,115 +66,97 @@ msgstr "Avtor"
 msgid "Notae"
 msgstr "Notae"
 
-#: src/ui/Main.qml:103
+#: src/ui/Main.qml:101
 #, kde-format
 msgid "New"
 msgstr "Nov"
 
-#: src/ui/Main.qml:114
-#, kde-format
-msgid "Create new document (Ctrl+N)"
-msgstr "Ustvari nov dokument (Ctrl+N)"
-
-#: src/ui/Main.qml:123
+#: src/ui/Main.qml:111
 #, kde-format
 msgid "Open…"
 msgstr "Odpri…"
 
-#: src/ui/Main.qml:130
-#, kde-format
-msgid "Open an existing note (Ctrl+O)"
-msgstr "Odpri obstoječ zapisek (Ctrl+O)"
-
-#: src/ui/Main.qml:139
+#: src/ui/Main.qml:117
 #, kde-format
 msgid "Save As…"
 msgstr "Shrani kot…"
 
-#: src/ui/Main.qml:139
+#: src/ui/Main.qml:117
 #, kde-format
 msgid "Save"
 msgstr "Shrani"
 
-#: src/ui/Main.qml:153
-#, kde-format
-msgid "Save new document (Ctrl+Shift+S)"
-msgstr "Shrani novi dokument (Ctrl+Shift+S)"
-
-#: src/ui/Main.qml:153
-#, kde-format
-msgid "Save document (Ctrl+S)"
-msgstr "Shrani dokument (Ctrl+S)"
-
-#: src/ui/Main.qml:167
+#: src/ui/Main.qml:133
 #, kde-format
 msgid "Cut"
 msgstr "Izreži"
 
-#: src/ui/Main.qml:175
-#, kde-format
-msgid "Cut selection to clipboard (Ctrl+X)"
-msgstr "Izreži izbiro na odložišče (Ctrl+X)"
-
-#: src/ui/Main.qml:184
+#: src/ui/Main.qml:140
 #, kde-format
 msgid "Copy"
 msgstr "Kopiraj"
 
-#: src/ui/Main.qml:192
-#, kde-format
-msgid "Copy selection to clipboard (Ctrl+C)"
-msgstr "Kopiraj izbiro na odložišče (Ctrl+C)"
-
-#: src/ui/Main.qml:201
+#: src/ui/Main.qml:147
 #, kde-format
 msgid "Paste"
 msgstr "Prilepi"
 
-#: src/ui/Main.qml:209
-#, kde-format
-msgid "Paste clipboard content (Ctrl+V)"
-msgstr "Prilepi vsebino odložišča (Ctrl+V)"
-
-#: src/ui/Main.qml:221
+#: src/ui/Main.qml:157
 #, kde-format
 msgid "Undo"
 msgstr "Prekliči"
 
-#: src/ui/Main.qml:229
-#, kde-format
-msgid "Undo last action (Ctrl+Z)"
-msgstr "Prekliči zadnje dejanje (Ctrl+Z)"
-
-#: src/ui/Main.qml:238
+#: src/ui/Main.qml:164
 #, kde-format
 msgid "Redo"
 msgstr "Uveljavi"
 
-#: src/ui/Main.qml:246
-#, kde-format
-msgid "Redo last undone action (Ctrl+Shift+Z)"
-msgstr "Uveljavi zadnjo preklicano dejanje (Ctrl+Shift+Z)"
-
-#: src/ui/Main.qml:262
+#: src/ui/Main.qml:185
 #, kde-format
 msgid "Menu"
 msgstr "Meni"
 
-#: src/ui/Main.qml:271
+#: src/ui/Main.qml:194
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "About Notae"
 msgstr "O Notae"
 
-#: src/ui/Main.qml:278
+#: src/ui/Main.qml:201
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "About KDE"
 msgstr "O KDE"
 
-#: src/ui/Main.qml:285
+#: src/ui/Main.qml:208
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit"
 msgstr "Zapusti"
+
+#~ msgid "Create new document (Ctrl+N)"
+#~ msgstr "Ustvari nov dokument (Ctrl+N)"
+
+#~ msgid "Open an existing note (Ctrl+O)"
+#~ msgstr "Odpri obstoječ zapisek (Ctrl+O)"
+
+#~ msgid "Save new document (Ctrl+Shift+S)"
+#~ msgstr "Shrani novi dokument (Ctrl+Shift+S)"
+
+#~ msgid "Save document (Ctrl+S)"
+#~ msgstr "Shrani dokument (Ctrl+S)"
+
+#~ msgid "Cut selection to clipboard (Ctrl+X)"
+#~ msgstr "Izreži izbiro na odložišče (Ctrl+X)"
+
+#~ msgid "Copy selection to clipboard (Ctrl+C)"
+#~ msgstr "Kopiraj izbiro na odložišče (Ctrl+C)"
+
+#~ msgid "Paste clipboard content (Ctrl+V)"
+#~ msgstr "Prilepi vsebino odložišča (Ctrl+V)"
+
+#~ msgid "Undo last action (Ctrl+Z)"
+#~ msgstr "Prekliči zadnje dejanje (Ctrl+Z)"
+
+#~ msgid "Redo last undone action (Ctrl+Shift+Z)"
+#~ msgstr "Uveljavi zadnjo preklicano dejanje (Ctrl+Shift+Z)"

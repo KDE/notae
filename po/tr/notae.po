@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: notae\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-23 00:44+0000\n"
+"POT-Creation-Date: 2024-12-02 00:46+0000\n"
 "PO-Revision-Date: 2024-10-23 12:52+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -65,115 +65,97 @@ msgstr "Yazar"
 msgid "Notae"
 msgstr "Notae"
 
-#: src/ui/Main.qml:103
+#: src/ui/Main.qml:101
 #, kde-format
 msgid "New"
 msgstr "Yeni"
 
-#: src/ui/Main.qml:114
-#, kde-format
-msgid "Create new document (Ctrl+N)"
-msgstr "Yeni belge oluştur (Kontrol+N)"
-
-#: src/ui/Main.qml:123
+#: src/ui/Main.qml:111
 #, kde-format
 msgid "Open…"
 msgstr "Aç…"
 
-#: src/ui/Main.qml:130
-#, kde-format
-msgid "Open an existing note (Ctrl+O)"
-msgstr "Var olan notu aç (Kontrol+O)"
-
-#: src/ui/Main.qml:139
+#: src/ui/Main.qml:117
 #, kde-format
 msgid "Save As…"
 msgstr "Farklı Kaydet…"
 
-#: src/ui/Main.qml:139
+#: src/ui/Main.qml:117
 #, kde-format
 msgid "Save"
 msgstr "Kaydet"
 
-#: src/ui/Main.qml:153
-#, kde-format
-msgid "Save new document (Ctrl+Shift+S)"
-msgstr "Yeni belge kaydet (Kontrol+Üst Karakter+S)"
-
-#: src/ui/Main.qml:153
-#, kde-format
-msgid "Save document (Ctrl+S)"
-msgstr "Belge kaydet (Kontrol+S)"
-
-#: src/ui/Main.qml:167
+#: src/ui/Main.qml:133
 #, kde-format
 msgid "Cut"
 msgstr "Kes"
 
-#: src/ui/Main.qml:175
-#, kde-format
-msgid "Cut selection to clipboard (Ctrl+X)"
-msgstr "Seçimi panoya kes (Kontrol+X)"
-
-#: src/ui/Main.qml:184
+#: src/ui/Main.qml:140
 #, kde-format
 msgid "Copy"
 msgstr "Kopyala"
 
-#: src/ui/Main.qml:192
-#, kde-format
-msgid "Copy selection to clipboard (Ctrl+C)"
-msgstr "Seçimi panoya kopyala (Kontrol+C)"
-
-#: src/ui/Main.qml:201
+#: src/ui/Main.qml:147
 #, kde-format
 msgid "Paste"
 msgstr "Yapıştır"
 
-#: src/ui/Main.qml:209
-#, kde-format
-msgid "Paste clipboard content (Ctrl+V)"
-msgstr "Pano içeriğini yapıştır (Kontrol+V)"
-
-#: src/ui/Main.qml:221
+#: src/ui/Main.qml:157
 #, kde-format
 msgid "Undo"
 msgstr "Geri Al"
 
-#: src/ui/Main.qml:229
-#, kde-format
-msgid "Undo last action (Ctrl+Z)"
-msgstr "Son eylemi geri al (Kontrol+Z)"
-
-#: src/ui/Main.qml:238
+#: src/ui/Main.qml:164
 #, kde-format
 msgid "Redo"
 msgstr "Yinele"
 
-#: src/ui/Main.qml:246
-#, kde-format
-msgid "Redo last undone action (Ctrl+Shift+Z)"
-msgstr "Geri alınan son eylemi yinele (Kontrol+Üst Karakter+Z)"
-
-#: src/ui/Main.qml:262
+#: src/ui/Main.qml:185
 #, kde-format
 msgid "Menu"
 msgstr "Menü"
 
-#: src/ui/Main.qml:271
+#: src/ui/Main.qml:194
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "About Notae"
 msgstr "Notae Hakkında"
 
-#: src/ui/Main.qml:278
+#: src/ui/Main.qml:201
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "About KDE"
 msgstr "KDE Hakkında"
 
-#: src/ui/Main.qml:285
+#: src/ui/Main.qml:208
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit"
 msgstr "Çık"
+
+#~ msgid "Create new document (Ctrl+N)"
+#~ msgstr "Yeni belge oluştur (Kontrol+N)"
+
+#~ msgid "Open an existing note (Ctrl+O)"
+#~ msgstr "Var olan notu aç (Kontrol+O)"
+
+#~ msgid "Save new document (Ctrl+Shift+S)"
+#~ msgstr "Yeni belge kaydet (Kontrol+Üst Karakter+S)"
+
+#~ msgid "Save document (Ctrl+S)"
+#~ msgstr "Belge kaydet (Kontrol+S)"
+
+#~ msgid "Cut selection to clipboard (Ctrl+X)"
+#~ msgstr "Seçimi panoya kes (Kontrol+X)"
+
+#~ msgid "Copy selection to clipboard (Ctrl+C)"
+#~ msgstr "Seçimi panoya kopyala (Kontrol+C)"
+
+#~ msgid "Paste clipboard content (Ctrl+V)"
+#~ msgstr "Pano içeriğini yapıştır (Kontrol+V)"
+
+#~ msgid "Undo last action (Ctrl+Z)"
+#~ msgstr "Son eylemi geri al (Kontrol+Z)"
+
+#~ msgid "Redo last undone action (Ctrl+Shift+Z)"
+#~ msgstr "Geri alınan son eylemi yinele (Kontrol+Üst Karakter+Z)"

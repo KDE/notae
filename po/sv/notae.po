@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: notae\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-23 00:44+0000\n"
+"POT-Creation-Date: 2024-12-02 00:46+0000\n"
 "PO-Revision-Date: 2024-11-25 18:52+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -65,115 +65,97 @@ msgstr "Upphovsman"
 msgid "Notae"
 msgstr "Notae"
 
-#: src/ui/Main.qml:103
+#: src/ui/Main.qml:101
 #, kde-format
 msgid "New"
 msgstr "Ny"
 
-#: src/ui/Main.qml:114
-#, kde-format
-msgid "Create new document (Ctrl+N)"
-msgstr "Skapa nytt dokument (Ctrl+N)"
-
-#: src/ui/Main.qml:123
+#: src/ui/Main.qml:111
 #, kde-format
 msgid "Open…"
 msgstr "Öppna…"
 
-#: src/ui/Main.qml:130
-#, kde-format
-msgid "Open an existing note (Ctrl+O)"
-msgstr "Öppna en befintlig anteckning (Ctrl+O)"
-
-#: src/ui/Main.qml:139
+#: src/ui/Main.qml:117
 #, kde-format
 msgid "Save As…"
 msgstr "Spara som…"
 
-#: src/ui/Main.qml:139
+#: src/ui/Main.qml:117
 #, kde-format
 msgid "Save"
 msgstr "Spara"
 
-#: src/ui/Main.qml:153
-#, kde-format
-msgid "Save new document (Ctrl+Shift+S)"
-msgstr "Spara nytt dokument (Ctrl+Skift+S)"
-
-#: src/ui/Main.qml:153
-#, kde-format
-msgid "Save document (Ctrl+S)"
-msgstr "Spara dokument (Ctrl+S)"
-
-#: src/ui/Main.qml:167
+#: src/ui/Main.qml:133
 #, kde-format
 msgid "Cut"
 msgstr "Klipp ut"
 
-#: src/ui/Main.qml:175
-#, kde-format
-msgid "Cut selection to clipboard (Ctrl+X)"
-msgstr "Klipp ut markering till klippbord (Ctrl+X)"
-
-#: src/ui/Main.qml:184
+#: src/ui/Main.qml:140
 #, kde-format
 msgid "Copy"
 msgstr "Kopiera"
 
-#: src/ui/Main.qml:192
-#, kde-format
-msgid "Copy selection to clipboard (Ctrl+C)"
-msgstr "Kopierar markering till klippbord (Ctrl+C)"
-
-#: src/ui/Main.qml:201
+#: src/ui/Main.qml:147
 #, kde-format
 msgid "Paste"
 msgstr "Klistra in"
 
-#: src/ui/Main.qml:209
-#, kde-format
-msgid "Paste clipboard content (Ctrl+V)"
-msgstr "Klistra in klippbordets innehåll (Ctrl+V)"
-
-#: src/ui/Main.qml:221
+#: src/ui/Main.qml:157
 #, kde-format
 msgid "Undo"
 msgstr "Ångra"
 
-#: src/ui/Main.qml:229
-#, kde-format
-msgid "Undo last action (Ctrl+Z)"
-msgstr "Ångra senaste åtgärden (Ctrl+Z)"
-
-#: src/ui/Main.qml:238
+#: src/ui/Main.qml:164
 #, kde-format
 msgid "Redo"
 msgstr "Gör om"
 
-#: src/ui/Main.qml:246
-#, kde-format
-msgid "Redo last undone action (Ctrl+Shift+Z)"
-msgstr "Gör om senast ångrade åtgärd (Ctrl+Skift+Z)"
-
-#: src/ui/Main.qml:262
+#: src/ui/Main.qml:185
 #, kde-format
 msgid "Menu"
 msgstr "Meny"
 
-#: src/ui/Main.qml:271
+#: src/ui/Main.qml:194
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "About Notae"
 msgstr "Om Notae"
 
-#: src/ui/Main.qml:278
+#: src/ui/Main.qml:201
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "About KDE"
 msgstr "Om KDE"
 
-#: src/ui/Main.qml:285
+#: src/ui/Main.qml:208
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit"
 msgstr "Avsluta"
+
+#~ msgid "Create new document (Ctrl+N)"
+#~ msgstr "Skapa nytt dokument (Ctrl+N)"
+
+#~ msgid "Open an existing note (Ctrl+O)"
+#~ msgstr "Öppna en befintlig anteckning (Ctrl+O)"
+
+#~ msgid "Save new document (Ctrl+Shift+S)"
+#~ msgstr "Spara nytt dokument (Ctrl+Skift+S)"
+
+#~ msgid "Save document (Ctrl+S)"
+#~ msgstr "Spara dokument (Ctrl+S)"
+
+#~ msgid "Cut selection to clipboard (Ctrl+X)"
+#~ msgstr "Klipp ut markering till klippbord (Ctrl+X)"
+
+#~ msgid "Copy selection to clipboard (Ctrl+C)"
+#~ msgstr "Kopierar markering till klippbord (Ctrl+C)"
+
+#~ msgid "Paste clipboard content (Ctrl+V)"
+#~ msgstr "Klistra in klippbordets innehåll (Ctrl+V)"
+
+#~ msgid "Undo last action (Ctrl+Z)"
+#~ msgstr "Ångra senaste åtgärden (Ctrl+Z)"
+
+#~ msgid "Redo last undone action (Ctrl+Shift+Z)"
+#~ msgstr "Gör om senast ångrade åtgärd (Ctrl+Skift+Z)"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: notae\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-23 00:44+0000\n"
+"POT-Creation-Date: 2024-12-02 00:46+0000\n"
 "PO-Revision-Date: 2024-10-23 21:20+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -65,115 +65,97 @@ msgstr "Autore"
 msgid "Notae"
 msgstr "Notae"
 
-#: src/ui/Main.qml:103
+#: src/ui/Main.qml:101
 #, kde-format
 msgid "New"
 msgstr "Nuovo"
 
-#: src/ui/Main.qml:114
-#, kde-format
-msgid "Create new document (Ctrl+N)"
-msgstr "Crea un nuovo documento (Ctrl+N)"
-
-#: src/ui/Main.qml:123
+#: src/ui/Main.qml:111
 #, kde-format
 msgid "Open…"
 msgstr "Apri…"
 
-#: src/ui/Main.qml:130
-#, kde-format
-msgid "Open an existing note (Ctrl+O)"
-msgstr "Apri una nota esistente (Ctrl+O)"
-
-#: src/ui/Main.qml:139
+#: src/ui/Main.qml:117
 #, kde-format
 msgid "Save As…"
 msgstr "Salva come…"
 
-#: src/ui/Main.qml:139
+#: src/ui/Main.qml:117
 #, kde-format
 msgid "Save"
 msgstr "Salva"
 
-#: src/ui/Main.qml:153
-#, kde-format
-msgid "Save new document (Ctrl+Shift+S)"
-msgstr "Salva il nuovo documento (Ctrl+Maiusc+S)"
-
-#: src/ui/Main.qml:153
-#, kde-format
-msgid "Save document (Ctrl+S)"
-msgstr "Salva il documento (Ctrl+S)"
-
-#: src/ui/Main.qml:167
+#: src/ui/Main.qml:133
 #, kde-format
 msgid "Cut"
 msgstr "Taglia"
 
-#: src/ui/Main.qml:175
-#, kde-format
-msgid "Cut selection to clipboard (Ctrl+X)"
-msgstr "Taglia la selezione negli appunti (Ctrl+X)"
-
-#: src/ui/Main.qml:184
+#: src/ui/Main.qml:140
 #, kde-format
 msgid "Copy"
 msgstr "Copia"
 
-#: src/ui/Main.qml:192
-#, kde-format
-msgid "Copy selection to clipboard (Ctrl+C)"
-msgstr "Copia la selezione negli appunti (Ctrl+C)"
-
-#: src/ui/Main.qml:201
+#: src/ui/Main.qml:147
 #, kde-format
 msgid "Paste"
 msgstr "Incolla"
 
-#: src/ui/Main.qml:209
-#, kde-format
-msgid "Paste clipboard content (Ctrl+V)"
-msgstr "Incolla il contenuto degli appunti (Ctrl+V)"
-
-#: src/ui/Main.qml:221
+#: src/ui/Main.qml:157
 #, kde-format
 msgid "Undo"
 msgstr "Annulla"
 
-#: src/ui/Main.qml:229
-#, kde-format
-msgid "Undo last action (Ctrl+Z)"
-msgstr "Annulla l'ultima azione (Ctrl+Z)"
-
-#: src/ui/Main.qml:238
+#: src/ui/Main.qml:164
 #, kde-format
 msgid "Redo"
 msgstr "Rifai"
 
-#: src/ui/Main.qml:246
-#, kde-format
-msgid "Redo last undone action (Ctrl+Shift+Z)"
-msgstr "Ripristina l'ultima azione annullata (Ctrl+Maiusc+Z)"
-
-#: src/ui/Main.qml:262
+#: src/ui/Main.qml:185
 #, kde-format
 msgid "Menu"
 msgstr "Menu"
 
-#: src/ui/Main.qml:271
+#: src/ui/Main.qml:194
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "About Notae"
 msgstr "Informazioni su Notae"
 
-#: src/ui/Main.qml:278
+#: src/ui/Main.qml:201
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "About KDE"
 msgstr "Informazioni su KDE"
 
-#: src/ui/Main.qml:285
+#: src/ui/Main.qml:208
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit"
 msgstr "Esci"
+
+#~ msgid "Create new document (Ctrl+N)"
+#~ msgstr "Crea un nuovo documento (Ctrl+N)"
+
+#~ msgid "Open an existing note (Ctrl+O)"
+#~ msgstr "Apri una nota esistente (Ctrl+O)"
+
+#~ msgid "Save new document (Ctrl+Shift+S)"
+#~ msgstr "Salva il nuovo documento (Ctrl+Maiusc+S)"
+
+#~ msgid "Save document (Ctrl+S)"
+#~ msgstr "Salva il documento (Ctrl+S)"
+
+#~ msgid "Cut selection to clipboard (Ctrl+X)"
+#~ msgstr "Taglia la selezione negli appunti (Ctrl+X)"
+
+#~ msgid "Copy selection to clipboard (Ctrl+C)"
+#~ msgstr "Copia la selezione negli appunti (Ctrl+C)"
+
+#~ msgid "Paste clipboard content (Ctrl+V)"
+#~ msgstr "Incolla il contenuto degli appunti (Ctrl+V)"
+
+#~ msgid "Undo last action (Ctrl+Z)"
+#~ msgstr "Annulla l'ultima azione (Ctrl+Z)"
+
+#~ msgid "Redo last undone action (Ctrl+Shift+Z)"
+#~ msgstr "Ripristina l'ultima azione annullata (Ctrl+Maiusc+Z)"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: notae\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-23 00:44+0000\n"
+"POT-Creation-Date: 2024-12-02 00:46+0000\n"
 "PO-Revision-Date: 2024-10-23 11:01+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -67,115 +67,97 @@ msgstr "Autoria"
 msgid "Notae"
 msgstr "Notae"
 
-#: src/ui/Main.qml:103
+#: src/ui/Main.qml:101
 #, kde-format
 msgid "New"
 msgstr "Nova"
 
-#: src/ui/Main.qml:114
-#, kde-format
-msgid "Create new document (Ctrl+N)"
-msgstr "Crea un document nou («Ctrl+N»)"
-
-#: src/ui/Main.qml:123
+#: src/ui/Main.qml:111
 #, kde-format
 msgid "Open…"
 msgstr "Obri…"
 
-#: src/ui/Main.qml:130
-#, kde-format
-msgid "Open an existing note (Ctrl+O)"
-msgstr "Obri una nota existent («Ctrl+O»)"
-
-#: src/ui/Main.qml:139
+#: src/ui/Main.qml:117
 #, kde-format
 msgid "Save As…"
 msgstr "Anomena i guarda…"
 
-#: src/ui/Main.qml:139
+#: src/ui/Main.qml:117
 #, kde-format
 msgid "Save"
 msgstr "Guarda"
 
-#: src/ui/Main.qml:153
-#, kde-format
-msgid "Save new document (Ctrl+Shift+S)"
-msgstr "Guarda com un document nou («Ctrl+Maj+S»)"
-
-#: src/ui/Main.qml:153
-#, kde-format
-msgid "Save document (Ctrl+S)"
-msgstr "Guarda el document («Ctrl+S»)"
-
-#: src/ui/Main.qml:167
+#: src/ui/Main.qml:133
 #, kde-format
 msgid "Cut"
 msgstr "Retalla"
 
-#: src/ui/Main.qml:175
-#, kde-format
-msgid "Cut selection to clipboard (Ctrl+X)"
-msgstr "Retalla la selecció a dins del porta-retalls («Ctrl+X»)"
-
-#: src/ui/Main.qml:184
+#: src/ui/Main.qml:140
 #, kde-format
 msgid "Copy"
 msgstr "Copia"
 
-#: src/ui/Main.qml:192
-#, kde-format
-msgid "Copy selection to clipboard (Ctrl+C)"
-msgstr "Copia la selecció a dins del porta-retalls («Ctrl+C»)"
-
-#: src/ui/Main.qml:201
+#: src/ui/Main.qml:147
 #, kde-format
 msgid "Paste"
 msgstr "Apega"
 
-#: src/ui/Main.qml:209
-#, kde-format
-msgid "Paste clipboard content (Ctrl+V)"
-msgstr "Apega el contingut del porta-retalls («Ctrl+V»)"
-
-#: src/ui/Main.qml:221
+#: src/ui/Main.qml:157
 #, kde-format
 msgid "Undo"
 msgstr "Desfés"
 
-#: src/ui/Main.qml:229
-#, kde-format
-msgid "Undo last action (Ctrl+Z)"
-msgstr "Desfà l'última acció («Ctrl+Z»)"
-
-#: src/ui/Main.qml:238
+#: src/ui/Main.qml:164
 #, kde-format
 msgid "Redo"
 msgstr "Refés"
 
-#: src/ui/Main.qml:246
-#, kde-format
-msgid "Redo last undone action (Ctrl+Shift+Z)"
-msgstr "Refà l'última acció desfeta («Ctrl+Maj+Z»)"
-
-#: src/ui/Main.qml:262
+#: src/ui/Main.qml:185
 #, kde-format
 msgid "Menu"
 msgstr "Menú"
 
-#: src/ui/Main.qml:271
+#: src/ui/Main.qml:194
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "About Notae"
 msgstr "Quant a Notae"
 
-#: src/ui/Main.qml:278
+#: src/ui/Main.qml:201
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "About KDE"
 msgstr "Quant a KDE"
 
-#: src/ui/Main.qml:285
+#: src/ui/Main.qml:208
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit"
 msgstr "Ix"
+
+#~ msgid "Create new document (Ctrl+N)"
+#~ msgstr "Crea un document nou («Ctrl+N»)"
+
+#~ msgid "Open an existing note (Ctrl+O)"
+#~ msgstr "Obri una nota existent («Ctrl+O»)"
+
+#~ msgid "Save new document (Ctrl+Shift+S)"
+#~ msgstr "Guarda com un document nou («Ctrl+Maj+S»)"
+
+#~ msgid "Save document (Ctrl+S)"
+#~ msgstr "Guarda el document («Ctrl+S»)"
+
+#~ msgid "Cut selection to clipboard (Ctrl+X)"
+#~ msgstr "Retalla la selecció a dins del porta-retalls («Ctrl+X»)"
+
+#~ msgid "Copy selection to clipboard (Ctrl+C)"
+#~ msgstr "Copia la selecció a dins del porta-retalls («Ctrl+C»)"
+
+#~ msgid "Paste clipboard content (Ctrl+V)"
+#~ msgstr "Apega el contingut del porta-retalls («Ctrl+V»)"
+
+#~ msgid "Undo last action (Ctrl+Z)"
+#~ msgstr "Desfà l'última acció («Ctrl+Z»)"
+
+#~ msgid "Redo last undone action (Ctrl+Shift+Z)"
+#~ msgstr "Refà l'última acció desfeta («Ctrl+Maj+Z»)"

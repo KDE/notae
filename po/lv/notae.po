@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: notae\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-23 00:44+0000\n"
+"POT-Creation-Date: 2024-12-02 00:46+0000\n"
 "PO-Revision-Date: 2024-11-07 16:12+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -66,115 +66,97 @@ msgstr "Autors"
 msgid "Notae"
 msgstr "Notae"
 
-#: src/ui/Main.qml:103
+#: src/ui/Main.qml:101
 #, kde-format
 msgid "New"
 msgstr "Jauns"
 
-#: src/ui/Main.qml:114
-#, kde-format
-msgid "Create new document (Ctrl+N)"
-msgstr "Izveidot jaunu dokumentu („Ctrl+N“)"
-
-#: src/ui/Main.qml:123
+#: src/ui/Main.qml:111
 #, kde-format
 msgid "Open…"
 msgstr "Atvērt…"
 
-#: src/ui/Main.qml:130
-#, kde-format
-msgid "Open an existing note (Ctrl+O)"
-msgstr "Atvērt pastāvošu piezīmi („Ctrl+O“)"
-
-#: src/ui/Main.qml:139
+#: src/ui/Main.qml:117
 #, kde-format
 msgid "Save As…"
 msgstr "Saglabāt kā…"
 
-#: src/ui/Main.qml:139
+#: src/ui/Main.qml:117
 #, kde-format
 msgid "Save"
 msgstr "Saglabāt"
 
-#: src/ui/Main.qml:153
-#, kde-format
-msgid "Save new document (Ctrl+Shift+S)"
-msgstr "Saglabāt jaunu dokumentu („Ctrl+Shift+S“)"
-
-#: src/ui/Main.qml:153
-#, kde-format
-msgid "Save document (Ctrl+S)"
-msgstr "Saglabāt dokumentu („Ctrl+S“)"
-
-#: src/ui/Main.qml:167
+#: src/ui/Main.qml:133
 #, kde-format
 msgid "Cut"
 msgstr "Izgriezt"
 
-#: src/ui/Main.qml:175
-#, kde-format
-msgid "Cut selection to clipboard (Ctrl+X)"
-msgstr "Izgriezt atlasīto uz starpliktuvi („Ctrl+X“)"
-
-#: src/ui/Main.qml:184
+#: src/ui/Main.qml:140
 #, kde-format
 msgid "Copy"
 msgstr "Kopēt"
 
-#: src/ui/Main.qml:192
-#, kde-format
-msgid "Copy selection to clipboard (Ctrl+C)"
-msgstr "Kopēt atlasīto uz starpliktuvi („Ctrl+C“)"
-
-#: src/ui/Main.qml:201
+#: src/ui/Main.qml:147
 #, kde-format
 msgid "Paste"
 msgstr "Ielīmēt"
 
-#: src/ui/Main.qml:209
-#, kde-format
-msgid "Paste clipboard content (Ctrl+V)"
-msgstr "Ielīmēt starpliktuves saturu („Ctrl+V“)"
-
-#: src/ui/Main.qml:221
+#: src/ui/Main.qml:157
 #, kde-format
 msgid "Undo"
 msgstr "Atsaukt"
 
-#: src/ui/Main.qml:229
-#, kde-format
-msgid "Undo last action (Ctrl+Z)"
-msgstr "Atsaukt pēdējo darbību („Ctrl+Z“)"
-
-#: src/ui/Main.qml:238
+#: src/ui/Main.qml:164
 #, kde-format
 msgid "Redo"
 msgstr "Atatsaukt"
 
-#: src/ui/Main.qml:246
-#, kde-format
-msgid "Redo last undone action (Ctrl+Shift+Z)"
-msgstr "Atsaukt pēdējo atsaukto darbību („Ctrl+Shift+Z“)"
-
-#: src/ui/Main.qml:262
+#: src/ui/Main.qml:185
 #, kde-format
 msgid "Menu"
 msgstr "Izvēlne"
 
-#: src/ui/Main.qml:271
+#: src/ui/Main.qml:194
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "About Notae"
 msgstr "Par „Notae“"
 
-#: src/ui/Main.qml:278
+#: src/ui/Main.qml:201
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "About KDE"
 msgstr "Par KDE"
 
-#: src/ui/Main.qml:285
+#: src/ui/Main.qml:208
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit"
 msgstr "Iziet"
+
+#~ msgid "Create new document (Ctrl+N)"
+#~ msgstr "Izveidot jaunu dokumentu („Ctrl+N“)"
+
+#~ msgid "Open an existing note (Ctrl+O)"
+#~ msgstr "Atvērt pastāvošu piezīmi („Ctrl+O“)"
+
+#~ msgid "Save new document (Ctrl+Shift+S)"
+#~ msgstr "Saglabāt jaunu dokumentu („Ctrl+Shift+S“)"
+
+#~ msgid "Save document (Ctrl+S)"
+#~ msgstr "Saglabāt dokumentu („Ctrl+S“)"
+
+#~ msgid "Cut selection to clipboard (Ctrl+X)"
+#~ msgstr "Izgriezt atlasīto uz starpliktuvi („Ctrl+X“)"
+
+#~ msgid "Copy selection to clipboard (Ctrl+C)"
+#~ msgstr "Kopēt atlasīto uz starpliktuvi („Ctrl+C“)"
+
+#~ msgid "Paste clipboard content (Ctrl+V)"
+#~ msgstr "Ielīmēt starpliktuves saturu („Ctrl+V“)"
+
+#~ msgid "Undo last action (Ctrl+Z)"
+#~ msgstr "Atsaukt pēdējo darbību („Ctrl+Z“)"
+
+#~ msgid "Redo last undone action (Ctrl+Shift+Z)"
+#~ msgstr "Atsaukt pēdējo atsaukto darbību („Ctrl+Shift+Z“)"
