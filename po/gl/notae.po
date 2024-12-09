@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: notae\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-02 00:46+0000\n"
-"PO-Revision-Date: 2024-11-10 13:16+0100\n"
+"PO-Revision-Date: 2024-12-08 08:50+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -32,6 +32,7 @@ msgstr "adrian@chaves.io"
 msgid "Cannot save: "
 msgstr "Non é posíbel gardar: "
 
+# well-spelled: Notæ
 #: src/main.cpp:38
 #, kde-format
 msgctxt "@title"
@@ -60,6 +61,7 @@ msgctxt "@info:credit"
 msgid "Author"
 msgstr "Autoría"
 
+# well-spelled: Notæ
 #: src/ui/Main.qml:17
 #, kde-format
 msgid "Notae"
@@ -115,6 +117,7 @@ msgstr "Refacer"
 msgid "Menu"
 msgstr "Menú"
 
+# well-spelled: Notæ
 #: src/ui/Main.qml:194
 #, kde-format
 msgctxt "@action:inmenu"
