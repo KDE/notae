@@ -8,6 +8,7 @@
   <name>Notae</name>
   <name xml:lang="ca">Notae</name>
   <name xml:lang="ca-valencia">Notae</name>
+  <name xml:lang="cs">Notae</name>
   <name xml:lang="en-GB">Notae</name>
   <name xml:lang="es">Notae</name>
   <name xml:lang="eu">Notae</name>
@@ -35,6 +36,7 @@
   <summary>Take notes easily</summary>
   <summary xml:lang="ca">Preneu notes fàcilment</summary>
   <summary xml:lang="ca-valencia">Preneu notes amb facilitat</summary>
+  <summary xml:lang="cs">Poznámky hravě</summary>
   <summary xml:lang="en-GB">Take notes easily</summary>
   <summary xml:lang="es">Tomar notas con facilidad</summary>
   <summary xml:lang="eu">Oharrak erraz hartzea</summary>
@@ -97,6 +99,7 @@
   <developer_name>KDE Community, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="ca">La comunitat KDE, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="ca-valencia">La comunitat KDE, Felipe Kinoshita</developer_name>
+  <developer_name xml:lang="cs">Komunita KDE, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="en-GB">KDE Community, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="es">La Comunidad KDE, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="eu">KDE Komunitatea, Felipe Kinoshita</developer_name>
