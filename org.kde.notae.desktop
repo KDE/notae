@@ -3,6 +3,7 @@
 
 [Desktop Entry]
 Name=Notae
+Name[ar]=نوتة
 Name[ca]=Notae
 Name[ca@valencia]=Notae
 Name[cs]=Notae
@@ -31,6 +32,7 @@ Name[uk]=Notae
 Name[x-test]=xxNotaexx
 Name[zh_TW]=Notae
 Comment=Take notes easily
+Comment[ar]=دوِّن الملاحظات بسهولة
 Comment[ca]=Preneu notes fàcilment
 Comment[ca@valencia]=Preneu notes amb facilitat
 Comment[cs]=Poznámky hravě
