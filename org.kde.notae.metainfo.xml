@@ -6,6 +6,7 @@
 <component type="desktop">
   <id>org.kde.notae</id>
   <name>Notae</name>
+  <name xml:lang="ar">نوتة</name>
   <name xml:lang="ca">Notae</name>
   <name xml:lang="ca-valencia">Notae</name>
   <name xml:lang="cs">Notae</name>
@@ -34,6 +35,7 @@
   <name xml:lang="x-test">xxNotaexx</name>
   <name xml:lang="zh-TW">Notae</name>
   <summary>Take notes easily</summary>
+  <summary xml:lang="ar">دوِّن الملاحظات بسهولة</summary>
   <summary xml:lang="ca">Preneu notes fàcilment</summary>
   <summary xml:lang="ca-valencia">Preneu notes amb facilitat</summary>
   <summary xml:lang="cs">Poznámky hravě</summary>
@@ -68,6 +70,7 @@
   </provides>
   <description>
     <p>Notae lets you focus on what's important.</p>
+    <p xml:lang="ar">تتيح لك نوتة التركيز على ما هو مهم.</p>
     <p xml:lang="ca">El Notae permet centrar-vos en allò que és important.</p>
     <p xml:lang="ca-valencia">Notae permet centrar-vos en allò que és important.</p>
     <p xml:lang="en-GB">Notae lets you focus on what's important.</p>
@@ -97,6 +100,7 @@
   <url type="homepage">https://invent.kde.org/fhek/notae</url>
   <url type="bugtracker">https://invent.kde.org/fhek/notae/-/issues</url>
   <developer_name>KDE Community, Felipe Kinoshita</developer_name>
+  <developer_name xml:lang="ar">فيليبي كينوشيتا، مجتمع كيدي</developer_name>
   <developer_name xml:lang="ca">La comunitat KDE, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="ca-valencia">La comunitat KDE, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="cs">Komunita KDE, Felipe Kinoshita</developer_name>
