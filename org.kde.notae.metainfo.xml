@@ -34,7 +34,6 @@
   <name xml:lang="sv">Notae</name>
   <name xml:lang="tr">Notae</name>
   <name xml:lang="uk">Notae</name>
-  <name xml:lang="x-test">xxNotaexx</name>
   <name xml:lang="zh-TW">Notae</name>
   <summary>Take notes easily</summary>
   <summary xml:lang="ar">دوِّن الملاحظات بسهولة</summary>
@@ -65,7 +64,6 @@
   <summary xml:lang="sv">Skriv enkelt anteckningar</summary>
   <summary xml:lang="tr">Kolay Not Alma Uygulaması</summary>
   <summary xml:lang="uk">Занотовуйте без проблем</summary>
-  <summary xml:lang="x-test">xxTake notes easilyxx</summary>
   <summary xml:lang="zh-TW">輕易作筆記</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
@@ -100,7 +98,6 @@
     <p xml:lang="sv">Notae låter dig fokusera på vad som är viktigt.</p>
     <p xml:lang="tr">Notae, sizin önemli olan şeylere odaklanmanıza olanak tanır.</p>
     <p xml:lang="uk">Notae надає вам змогу зосередитися на тому, що важливе.</p>
-    <p xml:lang="x-test">xxNotae lets you focus on what's important.xx</p>
     <p xml:lang="zh-TW">Notae 讓您能夠專注在重要的事情上。</p>
   </description>
   <url type="homepage">https://invent.kde.org/fhek/notae</url>
@@ -134,7 +131,6 @@
   <developer_name xml:lang="sv">KDE-gemenskapen, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="tr">KDE Topluluğu, Felipe Kinoshita</developer_name>
   <developer_name xml:lang="uk">Спільнота KDE, Felipe Kinoshita</developer_name>
-  <developer_name xml:lang="x-test">xxKDE Community, Felipe Kinoshitaxx</developer_name>
   <developer_name xml:lang="zh-TW">KDE 社群、Felipe Kinoshita</developer_name>
   <recommends>
     <control>keyboard</control>
