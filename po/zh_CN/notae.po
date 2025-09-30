@@ -30,105 +30,105 @@ msgstr ""
 #: src/documenthandler.cpp:605
 #, kde-format
 msgid "Cannot save: "
-msgstr ""
+msgstr "无法保存："
 
 #: src/main.cpp:38
 #, kde-format
 msgctxt "@title"
 msgid "Notae"
-msgstr ""
+msgstr "Notae"
 
 #: src/main.cpp:42
 #, kde-format
 msgid "Take notes easily"
-msgstr ""
+msgstr "轻松记下笔记"
 
 #: src/main.cpp:46
 #, kde-format
 msgid "© Felipe Kinoshita 2023"
-msgstr ""
+msgstr "© Felipe Kinoshita 2023"
 
 #: src/main.cpp:47
 #, kde-format
 msgctxt "@info:credit"
 msgid "Felipe Kinoshita"
-msgstr ""
+msgstr "Felipe Kinoshita"
 
 #: src/main.cpp:48
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
-msgstr ""
+msgstr "作者"
 
 #: src/ui/Main.qml:17
 #, kde-format
 msgid "Notae"
-msgstr ""
+msgstr "Notae"
 
 #: src/ui/Main.qml:101
 #, kde-format
 msgid "New"
-msgstr ""
+msgstr "新建"
 
 #: src/ui/Main.qml:111
 #, kde-format
 msgid "Open…"
-msgstr ""
+msgstr "打开..."
 
 #: src/ui/Main.qml:117
 #, kde-format
 msgid "Save As…"
-msgstr ""
+msgstr "另存为..."
 
 #: src/ui/Main.qml:117
 #, kde-format
 msgid "Save"
-msgstr ""
+msgstr "保存"
 
 #: src/ui/Main.qml:133
 #, kde-format
 msgid "Cut"
-msgstr ""
+msgstr "剪切"
 
 #: src/ui/Main.qml:140
 #, kde-format
 msgid "Copy"
-msgstr ""
+msgstr "复制"
 
 #: src/ui/Main.qml:147
 #, kde-format
 msgid "Paste"
-msgstr ""
+msgstr "粘贴"
 
 #: src/ui/Main.qml:157
 #, kde-format
 msgid "Undo"
-msgstr ""
+msgstr "撤销"
 
 #: src/ui/Main.qml:164
 #, kde-format
 msgid "Redo"
-msgstr ""
+msgstr "重做"
 
 #: src/ui/Main.qml:185
 #, kde-format
 msgid "Menu"
-msgstr ""
+msgstr "菜单"
 
 #: src/ui/Main.qml:194
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "About Notae"
-msgstr ""
+msgstr "关于 Notae"
 
 #: src/ui/Main.qml:201
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "About KDE"
-msgstr ""
+msgstr "关于 KDE"
 
 #: src/ui/Main.qml:208
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit"
-msgstr ""
+msgstr "退出"
