@@ -39,7 +39,7 @@
   <summary xml:lang="ar">دوِّن الملاحظات بسهولة</summary>
   <summary xml:lang="ca">Preneu notes fàcilment</summary>
   <summary xml:lang="ca-valencia">Preneu notes amb facilitat</summary>
-  <summary xml:lang="cs">Poznámky hravě</summary>
+  <summary xml:lang="cs">Zapisujte si poznámky jednoduše</summary>
   <summary xml:lang="de">Einfach von Notizen erstellen</summary>
   <summary xml:lang="en-GB">Take notes easily</summary>
   <summary xml:lang="es">Tomar notas con facilidad</summary>
@@ -75,6 +75,7 @@
     <p xml:lang="ar">تتيح لك نوتة التركيز على ما هو مهم.</p>
     <p xml:lang="ca">El Notae permet centrar-vos en allò que és important.</p>
     <p xml:lang="ca-valencia">Notae permet centrar-vos en allò que és important.</p>
+    <p xml:lang="cs">Notae vás nechá se soustředit na to, co je důležité.</p>
     <p xml:lang="de">Mit Notae können Sie sich auf das konzentrieren, was wichtig ist.</p>
     <p xml:lang="en-GB">Notae lets you focus on what's important.</p>
     <p xml:lang="es">Notae le permite centrarse en lo que es importante.</p>
