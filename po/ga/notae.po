@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the notae package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: notae\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+#: src/documenthandler.cpp:605
+#, kde-format
+msgid "Cannot save: "
+msgstr ""
+
+#: src/main.cpp:38
+#, kde-format
+msgctxt "@title"
+msgid "Notae"
+msgstr ""
+
+#: src/main.cpp:42
+#, kde-format
+msgid "Take notes easily"
+msgstr ""
+
+#: src/main.cpp:46
+#, kde-format
+msgid "© Felipe Kinoshita 2023"
+msgstr ""
+
+#: src/main.cpp:47
+#, kde-format
+msgctxt "@info:credit"
+msgid "Felipe Kinoshita"
+msgstr ""
+
+#: src/main.cpp:48
+#, kde-format
+msgctxt "@info:credit"
+msgid "Author"
+msgstr ""
+
+#: src/ui/Main.qml:17
+#, kde-format
+msgid "Notae"
+msgstr ""
+
+#: src/ui/Main.qml:101
+#, kde-format
+msgid "New"
+msgstr ""
+
+#: src/ui/Main.qml:111
+#, kde-format
+msgid "Open…"
+msgstr ""
+
+#: src/ui/Main.qml:117
+#, kde-format
+msgid "Save As…"
+msgstr ""
+
+#: src/ui/Main.qml:117
+#, kde-format
+msgid "Save"
+msgstr ""
+
+#: src/ui/Main.qml:133
+#, kde-format
+msgid "Cut"
+msgstr ""
+
+#: src/ui/Main.qml:140
+#, kde-format
+msgid "Copy"
+msgstr ""
+
+#: src/ui/Main.qml:147
+#, kde-format
+msgid "Paste"
+msgstr ""
+
+#: src/ui/Main.qml:157
+#, kde-format
+msgid "Undo"
+msgstr ""
+
+#: src/ui/Main.qml:164
+#, kde-format
+msgid "Redo"
+msgstr ""
+
+#: src/ui/Main.qml:185
+#, kde-format
+msgid "Menu"
+msgstr ""
+
+#: src/ui/Main.qml:194
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "About Notae"
+msgstr ""
+
+#: src/ui/Main.qml:201
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "About KDE"
+msgstr ""
+
+#: src/ui/Main.qml:208
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Quit"
+msgstr ""
