@@ -134,30 +134,3 @@ msgstr "Quant a KDE"
 msgctxt "@action:inmenu"
 msgid "Quit"
 msgstr "Ix"
-
-#~ msgid "Create new document (Ctrl+N)"
-#~ msgstr "Crea un document nou («Ctrl+N»)"
-
-#~ msgid "Open an existing note (Ctrl+O)"
-#~ msgstr "Obri una nota existent («Ctrl+O»)"
-
-#~ msgid "Save new document (Ctrl+Shift+S)"
-#~ msgstr "Guarda com un document nou («Ctrl+Maj+S»)"
-
-#~ msgid "Save document (Ctrl+S)"
-#~ msgstr "Guarda el document («Ctrl+S»)"
-
-#~ msgid "Cut selection to clipboard (Ctrl+X)"
-#~ msgstr "Retalla la selecció a dins del porta-retalls («Ctrl+X»)"
-
-#~ msgid "Copy selection to clipboard (Ctrl+C)"
-#~ msgstr "Copia la selecció a dins del porta-retalls («Ctrl+C»)"
-
-#~ msgid "Paste clipboard content (Ctrl+V)"
-#~ msgstr "Apega el contingut del porta-retalls («Ctrl+V»)"
-
-#~ msgid "Undo last action (Ctrl+Z)"
-#~ msgstr "Desfà l'última acció («Ctrl+Z»)"
-
-#~ msgid "Redo last undone action (Ctrl+Shift+Z)"
-#~ msgstr "Refà l'última acció desfeta («Ctrl+Maj+Z»)"
