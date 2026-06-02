@@ -1,0 +1,134 @@
+# Uyghur translation for notae.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the notae package.
+# Abduqadir Abliz <sahranbay@gmail.com>, 2026., YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: notae\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"PO-Revision-Date: 2026-06-01 16:24-0400\n"
+"Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
+"Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
+"Language: ug\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ئابدۇقادىر ئابلىز، غەيرەت كەنجى"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sahranbay@gmail.com, gheyret@gmail.com"
+
+#: src/documenthandler.cpp:605
+#, kde-format
+msgid "Cannot save: "
+msgstr ""
+
+#: src/main.cpp:38
+#, kde-format
+msgctxt "@title"
+msgid "Notae"
+msgstr "Notae"
+
+#: src/main.cpp:42
+#, kde-format
+msgid "Take notes easily"
+msgstr "ئاسان خاتىرە قالدۇرىدۇ"
+
+#: src/main.cpp:46
+#, kde-format
+msgid "© Felipe Kinoshita 2023"
+msgstr ""
+
+#: src/main.cpp:47
+#, kde-format
+msgctxt "@info:credit"
+msgid "Felipe Kinoshita"
+msgstr "Felipe Kinoshita"
+
+#: src/main.cpp:48
+#, kde-format
+msgctxt "@info:credit"
+msgid "Author"
+msgstr "يازغۇچى"
+
+#: src/ui/Main.qml:17
+#, kde-format
+msgid "Notae"
+msgstr "Notae"
+
+#: src/ui/Main.qml:101
+#, kde-format
+msgid "New"
+msgstr "يېڭى"
+
+#: src/ui/Main.qml:111
+#, kde-format
+msgid "Open…"
+msgstr "ئاچ…"
+
+#: src/ui/Main.qml:117
+#, kde-format
+msgid "Save As…"
+msgstr ""
+
+#: src/ui/Main.qml:117
+#, kde-format
+msgid "Save"
+msgstr "ساقلا"
+
+#: src/ui/Main.qml:133
+#, kde-format
+msgid "Cut"
+msgstr "كەس"
+
+#: src/ui/Main.qml:140
+#, kde-format
+msgid "Copy"
+msgstr "كۆچۈر"
+
+#: src/ui/Main.qml:147
+#, kde-format
+msgid "Paste"
+msgstr "چاپلا"
+
+#: src/ui/Main.qml:157
+#, kde-format
+msgid "Undo"
+msgstr "يېنىۋال"
+
+#: src/ui/Main.qml:164
+#, kde-format
+msgid "Redo"
+msgstr "قايتىلا"
+
+#: src/ui/Main.qml:185
+#, kde-format
+msgid "Menu"
+msgstr "تىزىملىك"
+
+#: src/ui/Main.qml:194
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "About Notae"
+msgstr ""
+
+#: src/ui/Main.qml:201
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "About KDE"
+msgstr "KDE ھەققىدە"
+
+#: src/ui/Main.qml:208
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Quit"
+msgstr "چىكىن"
